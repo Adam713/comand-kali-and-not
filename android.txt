@@ -1,0 +1,17 @@
+sudo apt-get update
+sudo apt-get install android-tools-adb 
+sudo apt-get install android-tools-fastboot
+
+
+sudo adb start-server
+
+to stop ADB server
+
+sudo adb kill-server
+
+After starting adb server connect your Android device with USB debugging mode enabled to your PC.
+Allow if prompted on Android device and issue the following command to list your device on ADB.
+
+adb devices
+
+adb devices

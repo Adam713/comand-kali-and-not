@@ -1,0 +1,33 @@
+ettercap -T -q ARP ///
+/etc/init.d/network-manager
+/etc/init.d/network-manager start
+nm-connection-editor
+airmon-ng check kill
+wlan1mon 00:C0:CA:62:EB:4D
+traceroute 192.168.0.1
+ufw status
+ufw enable
+ufw allow 80/tcp
+apt-get install isc-dhcp-server
+lsusb
+arp -a
+nmap -v -p 5555 10.2.160.3
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+easy-creds.sh 
+/opt/easy-creds/
+>3
+>1
+>n
+>usb0
+>wlan1
+>TP-LINK
+>10.0.0.0/24
+>8.8.8.8
+
+
+\\==============================
+cd /usr/share/wifi-honey 
+nano wifi_honey_template.rc

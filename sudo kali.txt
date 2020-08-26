@@ -1,0 +1,22 @@
+service tor start
+ifconfig
+apt-get upgrade
+apt-get update
+gedit /etc/apt/sources.list
+
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+
+https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
+
+apt-get dist-upgrade
+
+ apt-get update gufw
+apt-get install
+leafpad /etc/apt/sources.list
+-----------
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+
+uname -mrs$1
+ls -lah
+

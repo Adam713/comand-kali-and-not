@@ -1,0 +1,113 @@
+z
+        [+]  Enter IP/HOST : www.zid.net 
+
+www.zid.net.            299     IN      A       91.195.240.126
+www.zid.net.            21599   IN      NS      ns1.sedoparking.com.
+www.zid.net.            21599   IN      NS      ns2.sedoparking.com.
+www.zid.net.            21599   IN      SOA     ns1.sedoparking.com. hostmaster.sedo.de. 2018051601 86400 10800 604800 86400
+www.zid.net.            3599    IN      MX      0 localhost.
+www.zid.net.            3599    IN      TXT     "v=spf1 -all"
+----------------------------------------------------------------------------------------------------------------------
+192.168.13.1
+User: aliasaad
+Pass: aliasaad
+
+User: aliasaad
+Pass: aliasaad
+
+User: dircreate
+Pass: Toc51weGvK
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: aliasaad
+Pass: aliasaad
+----------------------------------------------
+Dns 
+188.240.121.37
+783f06a637d8.sn.mynetname.net    783f06a637d8.sn.mynetname.net
+188.209.235.59
+------------------
+Y60Y-W1XY
+--------------------
+608a05882d5e.sn.mynetname.net
+188.209.234.172
+--------------------------------------------
+
+188.240.121.37
+User: aliasaad     91.195.240.117
+Pass: aliasaad
+
+User: aliasaad
+Pass: aliasaad
+
+User: dircreate
+Pass: Toc51weGvK
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: aliasaad
+Pass: aliasaad
+
+User: aliasaad
+Pass: aliasaad
+------------------------------
+188.209.235.59
+User: aliasaad
+Pass: aliasaad
+
+User: aliasaad
+Pass: aliasaad
+
+User: dircreate
+Pass: Toc51weGvK
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: admin
+Pass: zaidzid246243
+
+User: aliasaad
+Pass: aliasaad
+
+User: aliasaad
+Pass: aliasaad
+-------------------------
+192.168.13.5
+E4:8D:8C:1E:DD:64
+E4:8D:8C:25:35:D0
+----------------
+192.168.13.5
+User: admin
+Pass: 
+
+User: admin
+Pass: 
+
+User: admin
+Pass: zaidzid246243
+------------------------------------
+192.168.13.0
+
+https://github.com/knightmare2600/TR069research.git
+
+RouterOS v6.39.3 
+192.168.88.2-192.168.88.254

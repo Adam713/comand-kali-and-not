@@ -1,0 +1,31 @@
+uniscan -h
+
+ uniscan -u http://192.168.1.202/ -qd
+uniscan-gui
+uniscan -u http://h.com/status -qwed
+
+uniscan -i "inurl: indox.php?id="
+
+
+ uniscan -f sites.txt
+or 
+ uniscan -f sites.txt -q
+
+uniscan -u http://172.16.1.102 -w
+uniscan -u http://172.16.1.102 -e
+uniscan -u http://172.16.1.102 -s
+
+uniscan -u http://172.16.1.102 -q
+
+uniscan -u http://172.16.1.102 -j
+
+uniscan -o inurl: indox.php?id=
+
+uniscan -u http://h.com/status -q -w -e - s
+
+inurl: indox.php?id=
+======================================
+breacher.py
+===================================
+python breacher.py -u http://www.zidnet.net/ --fast
+

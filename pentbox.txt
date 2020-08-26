@@ -1,0 +1,4 @@
+git clone https://github.com/H4CK3RT3CH/pentbox-1.8.git
+cd pentbox
+chmod +x *
+ruby pentbox.rb

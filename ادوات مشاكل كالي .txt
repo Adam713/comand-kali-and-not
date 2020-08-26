@@ -1,0 +1,63 @@
+apt-get autoremove
+
+sudo dpkg -i instal
+ dpkg-reconfigure tzdata
+ntpdate in.pool.ntp.org
+-----------------
+apt-get install isc-dhcp-server
+/etc/init.d/isc-dhcp-server start
+nano /etc/default/isc-dhcp-server 
+wlan0
+nano /etc/dhcp/dhcpd.conf
+--------------------------
+apt-get install libc6-dev-i386-cross
+libssl-dev
+libcurl4-gnutls-dev 
+libcurl4-openssl-dev
+libssl-dev 
+zlib1g-dev 
+libpcap-dev
+----------------------------------------------
+             armitage
+/home/root/ rm -r /usr/share/armitage
+cp -r armitage /usr/share
+ msfdb intit
+ msfdb intit
+------------------------------------
+ apt-get install network-manager-openvpn-gnome
+apt-get install network-manager-pptp
+apt-get install network-manager-pptp-gnome
+apt-get install network-manager-strongswan
+apt-get install network-manager-vpnc
+apt-get install network-manager-vpnc-gnome
+/etc/init.d/network-manager restart
+--------------------------------------
+wget https://git.io/vpn -O openvpn-install.sh
+ service openvpn-server@server status
+ service openvpn-server@server start / stop
+ service openvpn-server@server restart
+-----------------------------
+                     تثبيت البروتوكول
+pptp aptitude -r install network-manager-openvpn-gnome- network-manager-pptp network-manager-pptp-
+
+gnome network-manager-strongswan network-manager-vpnc network-manager-vpnc-gnome
+---------------------------------------------
+sudo systemctl enable NetworkManager.service
+
+
+systemctl status NetworkManager
+
+systemctl start/stop network
+--------------------------------------
+
+sudo dpkg --add-architecture i386
+sudo apt-get updatei
+apt-get install wicd 
+----------------------------
+airgeddon
+
+apt remove bettercap
+apt install ruby-packetfu ruby-colorize ruby-net-dns ruby-em-proxy ruby-network-interface
+wget https://github.com/v1s1t0r1sh3r3/bettercap1.6.2/raw/master/bettercap_1.6.2-0parrot1_all.deb
+dpkg -i bettercap_1.6.2-0parrot1_all.deb
+apt-mark hold bettercap

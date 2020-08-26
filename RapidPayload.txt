@@ -1,0 +1,7 @@
+cd RapidPayload
+
+
+bash install.sh
+
+python3 RapidPayload.py
+

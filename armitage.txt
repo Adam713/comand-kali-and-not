@@ -1,0 +1,38 @@
+systemctl start postgresql
+msfdb init
+
+==========================
+
+service postgresql start
+service metasploit start
+service metasploit stop
+/etc/init.d/postgresql start
+
+
+
+======================================
+backdoor-apk
+sudo apt-get install terminator
+apt-get update
+sudo apt-get full-upgrade-y
+sudo apt-get intall apktool
+sudo apt-get install zipalign
+cp RAR_v5.90.build83.apk /root/backdoor-apk/backdoor-apk
+
+sudo ./backdoor-apk.sh
+
+<<<<<<<<<<<<proplem backdoor>>>>>>>>>>>>>
+update-alternatives --config java
+apktool -version
+=====================
+ cd Evil-Droid
+     chmod +x evil-droid
+
+
+4?- Run Evil-Droid Framework :
+   ./evil-droid
+     see options bellow	   
+
+================================
+
+Execute framework and Services?

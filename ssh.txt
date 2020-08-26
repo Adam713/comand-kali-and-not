@@ -1,0 +1,117 @@
+service apache2 start
+service apache2 status
+nc 10.2.203.3 22
+nc -nv 10.2.203.3 80
+nc -nv 10.2.203.3 22
+nc -nv hackthissite.org 23
+nc -nv 10.0.0.1 80
+nc -nv 10.0.0.1 23
+nc -h
+ nc -l -p 53
+nc 10.0.0.1 53
+nc -nv 192.168.88.1 21
+nc -nv 192.168.88.1 23
+==========================
+
+telnet 127.0.0.1 23               send hi
+nc -l -p 23              
+telnet> quit                                            
+sudo ufw allow 3306/tcp                                                                   
+telnet 192.168.88.254 53
+nc -nv 81.223.238.248 3306
+===========================================
+dnsenum scanme.org
+
+===============
+
+ssh localhost
+service ssh start
+ 
+.localhost.localdomain.
+
+
+sudo service apache2 restart
+
+service apache2 status
+
+systemctl enable apache2
+
+touch arvind.txt
+touch arvind.txt > please subscribe my channel youtube.com/myitsec
+
+touch 123.txt >> please sub youtube.com/myitsec
+
+-----------------------------
+mkdir oldkey  
+mv ssh_host_* oldkey/
+
+dpkg-reconfigure openss
+
+dpkg-reconfigure openssh-server
+
+nano sshd_config
+
+
+--------------------------
+i-see-you
+https://queo.serveo.net
+
+
+
+-------------------------------
+
+
+
+sudo systemctl start ssh.socket
+
+To add a service to startup:
+1
+	
+sudo systemctl enable ssh.socket
+
+To check the status of a service:
+1
+	
+systemctl status ssh.socket
+
+
+
+ How to connect to Kali Linux via SSH
+
+The command to connect is as follows:
+1
+	
+ssh REMOTE_ USER@IP_ADDRESS
+
+As the IP_ADDRESS of the remote system, you need to specify its IP. You can find out the IP address with the command:
+1
+	
+ip a
+
+
+https://miloserdov.org/?p=3462
+
+تتم الإشارة إلى حقيقة أننا في نظام مختلف عن طريق موجه سطر الأوامر الذي تم تغييره - والآن يوجد اسم المستخدم واسم المضيف للنظام البعيد.
+كيفية تكوين مصادقة المفاتيح في Kali Linux (SSH بدون كلمة مرور)
+
+قطع الاتصال من الجهاز البعيد. وعلى الجهاز المحلي ، قم بتنفيذ الأمر:
+1
+
+سه كجن ، ر
+
+مرة أخرى ، دون اتصال أولي ، نقوم بتنفيذ الأمر على الجهاز البعيد (تغيير عنوان IP واسم المستخدم لك):
+1
+
+ssh root@192.168.1.68 mkdir .ssh
+
+نحتاج الآن إلى نسخ محتويات ملف id_rsa.pub إلى الجهاز البعيد. من السهل جدًا القيام بذلك (لا تنسَ تغيير البيانات إلى بياناتك الخاصة):
+1
+
+cat .ssh / id_rsa.pub | ssh root@192.168.1.68 'cat >> .ssh / Author_keys'
+
+بعد ذلك ، نتصل كالمعتاد ، ولكن تسجيل الدخول لن يتطلب كلمة مرور:
+apt-get install openssh-client
+
+
+leafpad hostname
+

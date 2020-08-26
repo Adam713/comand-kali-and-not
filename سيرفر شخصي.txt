@@ -1,0 +1,15 @@
+wget "https://downloads.sourceforge.net/project/xampp/XAMPP%20Linux/5.6.20/xampp-linux-5.6.20-0-installer.run"
+sudo su
+chmod +x xampp-linux-5.6.20-0-installer.run
+./xampp-linux-5.6.20-0-installer.run
+-------------------------
+/opt/lampp
+./xampp start 
+./xampp stop
+./xampp stats
+http://localhost/dashboard/
+127.0.0.1/XAMPP
+======================================
+service mysql start
+ mysql -u root
+

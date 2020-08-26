@@ -1,0 +1,2 @@
+nano /etc/ettercap/etter.conf 
+nano /etc/ettercap/etter.dns

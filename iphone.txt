@@ -1,0 +1,27 @@
+pen the terminal and put this command below and hit enter.
+
+echo “deb https://assets.checkra.in/debian /” | sudo tee -a /etc/apt/sources.list
+
+Then put this command below and hit enter.
+
+sudo apt-key adv –fetch-keys https://assets.checkra.in/debian/archive.key
+
+After that, run this command below.
+
+sudo apt update
+
+Now run this command first cd Desktop and hit enter, then put this command chmod 777 checkra1n and hit enter, after that put in this command sudo ./==
+
+================================================
+vi /etc/apt/sources.list
+deb https://assets.checkra.in/debian /
+apt install checkra1n
+checkra1n
+
+apt-key adv --fetch-keys https://assets.checkra.in/debian/archive.key
+
+
+
+
+apt-get install libusb-1.0-0-dev
+

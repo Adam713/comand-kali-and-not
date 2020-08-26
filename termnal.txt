@@ -1,0 +1,190 @@
+اولا كتابة اسم او جملة معينة داخل الترمنال بشكل سهل سوف نشرح عددأ من الادوات حيث سوف نبداء باالداة figlet
+
+للتنصيب تكتب الامر في الترمنال وسوف نطبق الشرح على توزيعة اللينكس Kali Linux  التي هيا من نواة دبيان
+
+للتنصيب نستخدم الامر التالي
+
+apt-get install figlet
+
+اذا كنت تستخدم مستخدم غير الرووت ابداء الامر ب sudo
+
+sudo apt-get install figlet
+
+بعد التنصيب يمكنك كتابة اي شي تريد على الترمنال عبر الامر figlet ثم تتلوة بالاسم او الجملة التي تريد طباعتها ليكون مثلا نريد طباعة LEZR.net
+
+figlet Hot Alwan.net
+
+وسوف تظهر النتيجة
+
+سوف نشرح ايضاً اداة  اخرى تعرض الكلام الذي تريده بصيغة خرى وهيا toilet
+
+للتنصيب عبر الامر ونفس ما ذكرنا سابقاً في حالة انك تستخدم مستخدم غير الروت root
+
+apt-get install toilet
+
+بعد التنصيب لكتابة الجملة عبر الامر toilet ويتلوها الكلام المراد طباعتة في الشاشة لنفرض نريد عرض Hot Alwan
+
+سوف يكون الامر
+
+toilet Hot Alwan.net
+
+
+
+ننتقل الى الى طريقة عرض الكلام داخل الاشكال مثلا شكل حيوان بقرة يخبرنا بتعليق وسوف نستخدم هنا اداة cowsay
+
+للتنصيب نستخدم الامر التالي
+
+apt-get install cowsay
+
+الاداة هنا في بعض النسخ تتواجد تلقاء نفسها في حالة لم تجدها قم بتنصيبها بشكل خارجي
+
+لتشغيل الاداه وطباعة مثلا www.lezrweb.com نستخدم الامر
+
+/usr/games/cowsay www.lezrweb.com
+
+ 
+
+يمكنكم التنصيب ايضاً من هنا حيث تجدون اشكال مختلفة
+
+https://github.com/sckott/cowsay
+
+https://github.com/piuccio/cowsay
+
+حيث ان التنصيب يتطلب تنصيب النود عبر الامر التالي لتوزيعة Debian و Ubuntu 
+
+ sudo apt-get install build-essential curl git m4 ruby texinfo libbz2-dev libcurl4-openssl-dev libexpat-dev libncurses-dev zlib1g-dev
+
+===================================
+#COMMANDS CREATED INSIDE /ETC/BASH.BASHRC FILE
+# USING ANSI COLORS
+RED="\e[31m"
+ORANGE="\e[33m"
+BLUE="\e[94m"
+GREEN="\e[92m"
+STOP="\e[0m"
+
+
+# LOGIN SCREEN MESSAGE 
+screenfetch
+printf "${GREEN}"
+printf "=================================\n"
+printf "${ORANGE}"
+figlet -w 200 -f standard "F4NT0 ARCH LINUX"
+printf "${BLUE}"
+figlet -w 200 -f  small "CLI Operational System"
+printf "${GREEN}"
+printf "=================================\n"
+printf "${STOP}"
+
+
+
+
+============================================
+
+
+echo -e "Normal \e[5mBlink"
+
+
+
+
+echo -e "Default \e[96mLight cyan"
+
+for i in {16..21} {21..16} ; do echo -en "\e[38;5;${i}m#\e[0m" ; done ; echo
+
+
+
+
+Code 	Color 	Example 	Preview
+49 	Default background color 	
+
+echo -e "Default \e[49mDefault"
+
+	Default Default
+40 	Black 	
+
+echo -e "Default \e[40mBlack"
+
+	Default Black
+41 	Red 	
+
+echo -e "Default \e[41mRed"
+
+	Default Red
+42 	Green 	
+
+echo -e "Default \e[42mGreen"
+
+	Default Green
+43 	Yellow 	
+
+echo -e "Default \e[43mYellow"
+
+	Default Yellow
+44 	Blue 	
+
+echo -e "Default \e[44mBlue"
+
+	Default Blue
+45 	Magenta 	
+
+echo -e "Default \e[45mMagenta"
+
+	Default Magenta
+46 	Cyan 	
+
+echo -e "Default \e[46mCyan"
+
+	Default Cyan
+47 	Light gray 	
+
+echo -e "Default \e[47mLight gray"
+
+	Default Light gray
+100 	Dark gray 	
+
+echo -e "Default \e[100mDark gray"
+
+	Default Dark gray
+101 	Light red 	
+
+echo -e "Default \e[101mLight red"
+
+	Default Light red
+102 	Light green 	
+
+echo -e "Default \e[102mLight green"
+
+	Default Light green
+103 	Light yellow 	
+
+echo -e "Default \e[103mLight yellow"
+
+	Default Light yellow
+104 	Light blue 	
+
+echo -e "Default \e[104mLight blue"
+
+	Default Light blue
+105 	Light magenta 	
+
+echo -e "Default \e[105mLight magenta"
+
+	Default Light magenta
+106 	Light cyan 	
+
+echo -e "Default \e[106mLight cyan"
+
+	Default Light cyan
+107 	White 	
+
+echo -e "Default \e[107mWhite"
+
+	Default White
+---------------------
+echo -e "Normal \e[5mBlink"
+
+echo -e "\e[40;38;5;82m Hello \e[30;48;5;82m World \e[0m"
+=====================================================
+
+watch -n1 "date '+%D%n%T'|figlet -k"
+

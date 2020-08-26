@@ -1,0 +1,36 @@
+netdiscover -f -r 10.0.0.1/24
+
+netdiscover 10.0.0.1
+192.168.27.0/16
+netdiscover -r 192.168.1.0/24
+netdiscover-r 192.168.1.1/24 -PN
+ping www.zidnet.net
+netdiscover -f -r 10.0.0.1/24
+
+
+http://h.com/status
+
+
+
+:macchanger 
+2:ifconfig wlan0 dwon
+3:macchanger -r wlan0 
+4:macchanger --permanent
+5:macchanger --list
+6:macchanger --mac xx:xx:xx:xx:xx:xx
+7:ifconfig wlan0 up
+macchanger --mac 68:E7:C2:4B:99:7D wlan1mon
+macchanger --mac b4:f7:a1:f2:2f:19 eth0
+macchanger -mac a4:eb:d3:d5:62:ec eth0
+macchanger -m 74:4D:28:3D:AC:86 eth0 wlan0
+
+------------------
+ifconfig wlan0 down
+macchanger wlan0 -s
+macchanger wlan0 -r
+macchanger wlan0 -m
+macchanger wlan0 -p
+service network-manager restart
+ifconfig wlan0 up
+20:2d:07:8f:ff:2f
+10.5.250.3

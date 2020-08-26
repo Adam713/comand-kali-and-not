@@ -1,0 +1,8 @@
+adduser --home /home/admin admin
+
+usermod -a -G sudo admin
+netstat -lnp --ip
+
+
+
+crypt

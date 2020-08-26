@@ -1,0 +1,7 @@
+/usr/share/hashcat-utils/
+
+/usr/share/hashcat-utils/cap2hccapx.bin /root/hs/WPAHash.cap /root/hs/WPAHash.hccapx
+
+-------------------------------
+https://hashcat.net/cap2hccapx/
+-------------------

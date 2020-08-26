@@ -1,0 +1,4 @@
+service tor start
+service tor status
+proxychains firefox
+https://dnsleaktest.com/

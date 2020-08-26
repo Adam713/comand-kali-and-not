@@ -1,0 +1,2 @@
+python spynoteshell.py
+python spynoteshell.py /media/root/3939-6435/mobileApp.apk

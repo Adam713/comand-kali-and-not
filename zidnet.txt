@@ -1,0 +1,105 @@
+a8:b8:6e:3e:1f:56
+
+ nmap -A 192.168.88.1
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-31 21:51 UTC
+Nmap scan report for 192.168.88.1
+Host is up (0.035s latency).
+Not shown: 995 closed ports
+PORT     STATE SERVICE        VERSION
+21/tcp   open  ftp            MikroTik router ftpd 6.37.1
+| ftp-syst: 
+|   SYST: UNIX MikroTik 6.37.1
+|   STAT: 
+|  zid.net FTP server (MikroTik 6.37.1) status:
+| Logged in as 
+| TYPE: ASCII; STRUcture: File; transfer MODE: Stream
+| No data connection
+|_End of status
+23/tcp   open  telnet         Linux telnetd
+53/tcp   open  domain         (generic dns response: NOTIMP)
+2000/tcp open  bandwidth-test MikroTik bandwidth-test server
+8291/tcp open  winbox         MikroTik WinBox
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=12/31%Time=5E0BC2F9%P=i686-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0")%r(DNSStatusRe
+SF:questTCP,E,"\0\x0c\0\0\x90\x84\0\0\0\0\0\0\0\0");
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.13
+Network Distance: 2 hops
+Service Info: Host: zid.net; OS: Linux; Device: router; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 256/tcp)
+HOP RTT     ADDRESS
+1   1.09 ms 10.2.79.1
+2   6.91 ms 192.168.88.1
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 153.45 seconds
+nmap -v 192.168.88.1
+--------------------------------------------------------
+
+root@localhost:~# nmap -A 10.0.0.1
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-31 22:27 UTC
+Nmap scan report for www.zidnet.net (10.0.0.1)
+Host is up (0.026s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE VERSION
+53/tcp   open  domain  (generic dns response: NOTIMP)
+80/tcp   open  http    MikroTik HotSpot
+| http-title: \xD4\xC8\xDF\xDC\xDC\xC9 \xD2\xED\xCF \xE4\xCA 
+|_Requested resource was http://www.zidnet.net/status
+443/tcp  open  https?
+1723/tcp open  pptp    MikroTik (Firmware: 1)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=12/31%Time=5E0BCB5F%P=i686-pc-linux-gnu%r(DNSVe
+SF:rsionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0")%r(DNSStatusRe
+SF:questTCP,E,"\0\x0c\0\0\x90\x84\0\0\0\0\0\0\0\0");
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Network Distance: 1 hop
+Service Info: Host: zidnet; OS: RouterOS; CPE: cpe:/o:mikrotik:routeros
+
+TRACEROUTE (using port 1025/tcp)
+HOP RTT     ADDRESS
+1   1.98 ms www.zidnet.net (10.0.0.1)
+--------------------------------------------------------------------------------------
+nmap 81.223.238.248
+Starting Nmap 7.80 ( https://nmap.org ) at 2019-12-31 22:42 UTC
+Nmap scan report for www6.sprit.org (81.223.238.248)
+Host is up (0.27s latency).
+Not shown: 985 closed ports
+PORT     STATE    SERVICE
+21/tcp   open     ftp
+22/tcp   open     ssh
+25/tcp   filtered smtp
+53/tcp   open     domain
+80/tcp   open     http
+135/tcp  filtered msrpc
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+3306/tcp open     mysql
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
+195.34.133.134
+===========================================
+
+Name Servers:
+______________
+
+rns2.upc.biz.                            6398     IN    A        213.47.222.134
+rns1.upc.biz.                            16415    IN    A        195.34.133.134
+
+
+
+
+
+
+

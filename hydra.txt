@@ -1,0 +1,30 @@
+hydra 10.0.0.1 -l admin -p /usr/share/wordlists/simple-pass.txt http-get-from ""
+ hydra -l admin -P /usr/share/wordlists/nmap.lst ftp://192.168.0.1
+ hydra -l admin -P http://10.38.203.2
+ hydra -l admin -P /usr/share/wordlists/fasttrack.txt http://0.0.0.0
+
+
+Download Burp Suite Community Edition - PortSwigger
+
+openssl s_client --connect 192.168.88.1:21
+
+crunch 11 11 83826050465 -o /root/zid.txt
+crunch 8 8 83826050465 -o /root/zid.txt
+ 
+
+
+
+=================================
+john --list=formats
+john /root/md5.txt --format=Raw-MD5
+
+===============================================
+
+
+hash-identifier
+==========================
+python findmyhash.py algorithm OPTIONS
+
+python findmyhash.py MD5 -h ccfab01b0f0addea1f61a97255525fdf
+findmyhash
+

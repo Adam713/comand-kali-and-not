@@ -1,0 +1,47 @@
+nmap -A 192.168.1.77
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-07-11 02:42 +03
+Nmap scan report for 192.168.1.77
+Host is up (0.097s latency).
+Not shown: 988 closed ports
+PORT     STATE    SERVICE        VERSION
+22/tcp   filtered ssh
+23/tcp   open     telnet         Openwall GNU/*/Linux telnetd
+53/tcp   open     domain         (generic dns response: NOTIMP)
+135/tcp  filtered msrpc
+179/tcp  filtered bgp
+445/tcp  filtered microsoft-ds
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.80%I=7%D=7/11%Time=5F08FCFD%P=i686-pc-linux-gnu%r(DNSVer
+SF:sionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0")%r(DNSStatusReq
+SF:uestTCP,E,"\0\x0c\0\0\x90\x84\0\0\0\0\0\0\0\0");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=7/11%OT=23%CT=1%CU=31889%PV=Y%DS=5%DC=T%G=Y%TM=5F08FD2
+OS:2%P=i686-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10D%CI=I%TS=A)SEQ(SP=105%GCD=
+OS:1%ISR=10D%CI=I%II=I%TS=A)SEQ(SP=108%GCD=1%ISR=108%II=I%TS=A)OPS(O1=M5A0N
+OS:W1NNT11SLL%O2=M5A0NW1NNT11SLL%O3=M5A0NW1NNT11%O4=M5A0NW1NNT11SLL%O5=M5A0
+OS:NW1NNT11SLL%O6=M5A0NNT11SLL)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%
+OS:W6=FFFF)ECN(R=Y%DF=Y%T=40%W=FFFF%O=M5A0NW1SLL%CC=N%Q=)T1(R=Y%DF=Y%T=40%S
+OS:=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=N%T=40%W=0%S=A%A=Z%F=R%O=%R
+OS:D=0%Q=)T5(R=Y%DF=N%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=N%T=40%W=
+OS:0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=N)U1(R=Y%DF=Y%T=FF%IPL=38%UN=0%RIPL=G%RID=
+OS:G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=40%CD=S)
+
+Network Distance: 5 hops
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   2.29 ms   10.5.137.1
+2   4.94 ms   192.168.88.1
+3   ...
+4   62.61 ms  178.130.104.1
+5   414.30 ms 192.168.1.77
+
+

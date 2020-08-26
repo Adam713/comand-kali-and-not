@@ -1,0 +1,14 @@
+python3 phantom-evasion.py
+
+or:
+
+./phantom-evasion.py
+
+    Otherwise to see cmdline mode options:
+
+python3 phantom-evasion.py --help
+
+or:
+
+./phantom-evasion.py --help
+

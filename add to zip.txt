@@ -1,0 +1,293 @@
+
+أمر الضغط بامتداد zip
+
+qzip failname.zip
+
+
+امر فك ضغط zip 
+
+
+unzip failname.zip
+
+
+أمر الضغط بامتداد tar
+
+
+tar -zcf zz.tar daily
+
+
+أمر فك الضغط بامتداد tar
+
+
+tar -zxf zz.tar
+
+
+أمر ضغط الملف بامتداد gz 
+
+
+tar -czvf file name.tar.gz 
+
+
+فك الضغط بامتداد gz 
+
+
+gzip -d file.gz
+
+
+فك ضغط rar 
+
+
+unrar x 123.rar
+
+
+كيفية ضغط قاعدة البيانات
+
+
+tar -czvf file name.tar.gz file name.sql
+
+
+كيفية فك قواعد البيانات 
+
+
+tar -zxvf file name.tar.gz
+
+
+امر ضغط المجلدات بامتداد tar.gz
+
+
+tar -czvf /home/user/public_html/n3.tar.gz n3
+
+
+امر استعراض المجلدات
+
+
+ls
+
+
+امر استعراض المجلدات والمجلدات المخفية والتصاريح
+
+
+ls -la
+
+
+امر سحب مجلد من الموقع
+
+
+wget http://xxxx.com/xxx.zip 
+
+
+أمر معرفة جميع الاوامر التي كتبتها 
+
+
+history
+
+
+أمر إنشاء مجلد 
+
+
+mkdir SNiPER
+
+
+أمر حذف ملف
+
+
+rm SNiPER
+
+
+أمر حذف مجلد
+
+
+rm -r dir
+
+
+أمر العودة للخلف
+
+
+cd .. 
+
+
+أمر البحث
+
+
+find
+
+
+أمر إعطاء تصريح 777
+
+
+chmod 777 
+
+
+امر اصلاح النظام
+
+
+sudo dpkg –configure -a
+
+
+امر اصلاح المستودعات او الحزم التي فيها مشاكل
+
+
+sudo apt-get install -f
+
+
+اما الان نبدء على بركة الله في اوامر تنصيب البرامج 
+
+
+برنامج bansheeللصوت التثبيت يكون بالامر التالي 
+
+
+sudo apt-get install banshee
+
+
+برنامج minitunes للصوت مع ضرورة وصل الويب
+
+
+
+sudo add-apt-repository ppa:nilarimogard/w e bupd8 && sudo apt-get update update
+ثم الامر التالي 
+
+
+sudo apt-get install minitunes
+
+
+برنامج vlc مشغل الفيديو والصوتيات المعروف 
+
+
+apt-get install vlc
+
+
+
+وهذه طريقة حل لمشكلة فتحة
+نفتح
+Terminal
+
+
+نكتب الأمر اﻻول
+apt-get install vlc
+
+
+ثم اﻻمر الثاني
+apt-get install okteta
+
+
+ثم الأمر الثالث
+okteta /usr/bin/vlc
+
+
+سنلاحظ شاشة فيها أرقام و حروف
+
+
+قم بالبحث على كلمة: geteuid ونستبدلها بكلمة: getppid يعني غير eu الى pp
+
+
+ثم نقوم بحفظ التغير
+ونذهب الى
+Sound & Video
+
+
+ونقوم بتشغلة وبيكون اشتغل
+
+
+
+برنامج mplayer المعروف 
+
+
+apt-get install mplayer 
+
+
+برنامج Emesene للمحادثة عبر MSN
+
+
+sudo apt-get install emesene
+
+
+برنامج Skype للمحادثة الصوتية
+
+
+sudo apt-get install skype
+
+
+برامج الضغط برابط واحد
+
+
+sudo apt-get install unace rar unrar zip unzip p7zip-full p7zip-rar sharutils aish uudeview mpack lha arj cabextract file-roller
+
+
+برنامج FileZilla من أجل FTP
+
+
+sudo apt-get install filezilla filezilla-common
+
+
+برنامج gftp
+
+
+sudo apt-get install gftp 
+
+
+برنامج تصوير سطح المكتب بالفيديو
+
+
+sudo apt-get install gtk-recordMyDesktop
+
+
+متصفح قوقل كروم 
+
+
+sudo aptitude install chromium-Browser chromium-Browser-l10n
+
+
+متصفح اوبرا 
+
+
+sudo aptitude install Opera
+
+
+برنامج UFW جدار ناري من أجل زيادة الحماية منصب بشكل افتراضي مع التوزيعة ولكن سنقوم بتنصيب الواجهة الرسومية من اجل سهولة الاعداد والتحكم
+به
+
+
+sudo apt-get install gufw
+
+
+برنامج تورنت 
+
+
+sudo aptitude install deluge-Torrent
+
+
+برنامج ادوبي ريدر لقآرئ الملفات من نوع pdf
+
+
+sudo aptitude install acroread acroread-fonts
+
+
+برنامج openoffice.org
+
+
+sudo apt-get install openoffice.org
+
+
+برامج Virtualbox
+
+
+sudo apt-get install virtualbox-ose
+
+
+برنامج kate
+
+
+sudo apt-get install kate
+
+
+برنامج firestarter
+
+
+sudo apt-get install firestarter
+
+
+برنامج gwibber ميزاته تضيف فيه فيس بوك و توتير و كثير ..
+
+
+sudo apt-get install gwibber
+

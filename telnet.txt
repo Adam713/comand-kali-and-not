@@ -1,0 +1,2 @@
+telnet 192.168.0.10 25
+telnet rpc.acronis.com 443

@@ -1,0 +1,11 @@
+cd PhoneInfoga
+chmod +x phoneinfoga.py
+
+ chmod +x Dockerfile
+ mv config.example.py config.py
+chmod 777 config.py phoneinfoga.py
+python3  -m pip install -r requirements.txt
+ python3 phoneinfoga.py -v
+python3 phoneinfoga.py -n +18000827801
+python3 phoneinfoga.py -n +967713458500
+

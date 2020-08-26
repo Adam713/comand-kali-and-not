@@ -1,0 +1,40 @@
+root@localhost:~# hostname
+localhost.localdomain
+root@localhost:~# hostname Adamworld
+root@localhost:~# hostname
+Adamworld
+root@localhost:~# cat /etc/hostname
+localhost
+root@localhost:~# hostnamectl
+   Static hostname: localhost
+Transient hostname: Adamworld
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: 452fbde28fef4aa7aff3ec8bf60241fa
+           Boot ID: 4bf79ae2493a467bade60aa6f22904d9
+  Operating System: Kali GNU/Linux Rolling
+            Kernel: Linux 5.3.0-kali2-686-pae
+      Architecture: x86
+root@localhost:~# 
+                                                           
+                           
+root@localhost:~# hostnamectl set-hostname Adamworld
+root@localhost:~# hostname
+Adamworld
+root@localhost:~# hostnamectl
+   Static hostname: Adamworld
+         Icon name: computer-laptop
+           Chassis: laptop
+        Machine ID: 452fbde28fef4aa7aff3ec8bf60241fa
+           Boot ID: 4bf79ae2493a467bade60aa6f22904d9
+  Operating System: Kali GNU/Linux Rolling
+            Kernel: Linux 5.3.0-kali2-686-pae
+      Architecture: x86
+root@localhost:~# cat etc/hostname
+cat: etc/hostname: No such file or directory
+root@localhost:~# cat /etc/hostname
+Adamworld
+root@localhost:~# 
+                                
+                                                           
+                                          

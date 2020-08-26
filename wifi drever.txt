@@ -1,0 +1,47 @@
+sudo nmcli nm wifi off
+sudo rfkill unblock wlan1
+sudo ifconfig  wlan0 10.15.0.1/24 up
+sudo service isc-dhcp-server restart
+sudo service hostapd restart
+sudo nmcli radio wifi off
+cd /etc/NetworkManager/
+nano NetworkManager.conf
+
+
+
+
+
+
+/usr/bin/
+nano enableAp.sh
+
+==================
+[main]
+plugins=ifupdown,keyfile
+
+[ifupdown]
+managed=false
+
+
+===================
+
+[keyfile]
+unmanaged-devices=00:C0:CA:62:EB:4D
+
+unmanaged-devices=mac:xx:xx:xx:xx:xx:xx
+
+
+=========================
+#!/bin/sh
+/bin/sleep 30
+/usr/sbin/service hostapd stop
+/usr/sbin/service network-manager stop
+/sbin/ifdown wlan0
+/sbin/iwconfig wlan0 mod e Managed
+/usr/sbin/rfkill unblock wlan
+/usr/bin/nmcli radio wifi off
+/usr/sbin/service hostapd stop
+/bin/sleep 10
+/usr/sbin/service hostapd start
+
+

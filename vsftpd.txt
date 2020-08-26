@@ -1,0 +1,11 @@
+service vsftpd start
+
+
+
+
+
+
+
+=========================
+apt install filezilla
+

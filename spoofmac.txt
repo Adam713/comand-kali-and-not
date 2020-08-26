@@ -1,0 +1,77 @@
+Installation
+
+You can install from PyPI using pip or easy_install:
+
+pip install SpoofMAC
+easy_install SpoofMAC
+
+or clone/download the repository and install with setup.py. Ex:
+
+git clone git://github.com/feross/SpoofMAC.git
+cd SpoofMAC
+python setup.py install
+
+If you're not using the system Python (because you use Homebrew, for example), make sure you add '/usr/local/share/python/' (or equivalent) to your path.
+
+Or, consider using spoof, a node.js port of this package.
+Usage
+
+SpoofMAC installs a command-line script called spoof-mac.py. You can always see up-to-date usage instructions by typing spoof-mac.py --help.
+Examples
+
+Some short usage examples.
+List available devices:
+
+spoof-mac.py list
+- "Ethernet" on device "en0" with MAC address 70:56:51:BE:B3:00
+- "Wi-Fi" on device "en1" with MAC address 70:56:51:BE:B3:01 currently set to 70:56:51:BE:B3:02
+- "Bluetooth PAN" on device "en1"
+
+List available devices, but only those on wifi:
+
+spoof-mac.py list --wifi
+- "Wi-Fi" on device "en0" with MAC address 70:56:51:BE:B3:6F
+
+Randomize MAC address (requires root)
+
+You can use the hardware port name, such as:
+
+spoof-mac.py randomize wi-fi
+
+or the device name, such as:
+
+spoof-mac.py randomize en0
+
+Set device MAC address to something specific (requires root)
+
+spoof-mac.py set 00:00:00:00:00:00 en0
+
+Reset device to its original MAC address (requires root)
+
+While not always possible (because the original physical MAC isn't available), you can try setting the MAC address of a device back to its burned-in address using reset:
+
+spoof-mac.py reset wi-fi
+
+(older versions of OS X may call it "airport" instead of "wi-fi")
+
+Another option to reset your MAC address is to simply restart your computer. OS X doesn't store changes to your MAC address between restarts. If you want to make change your MAC address and have it persist between restarts, read the next section.
+Optional: Run automatically at startup
+
+OS X doesn't let you permanently change your MAC address. Every time you restart your computer, your address gets reset back to whatever it was before. Fortunately, SpoofMAC can easily be set to run at startup time so your computer will always have the MAC address you want.
+Startup Installation Instructions
+
+First, make sure SpoofMAC is installed. Then, run the following commands in Terminal:
+
+# Download the startup file for launchd
+curl https://raw.githubusercontent.com/feross/SpoofMAC/master/misc/local.macspoof.plist > local.macspoof.plist
+
+# Customize location of `spoof-mac.py` to match your system
+cat local.macspoof.plist | sed "s|/usr/local/bin/spoof-mac.py|`which spoof-mac.py`|" | tee local.macspoof.plist
+
+# Copy file to the OS X launchd folder
+sudo cp local.macspoof.plist /Library/LaunchDaemons
+
+# Set file permissions
+cd /Library/LaunchDaemons
+sudo chown root:wheel local.macspoof.plist
+sudo chmod 0644 local.macspoof.plist

