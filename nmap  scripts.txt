@@ -1,6 +1,8 @@
 nmap -sV --script=vulscan/vulscan.nse www.zidnet.net
+nmap -p 21 192.168.0.1 --script ftp-anon
 
 nmap -sV --script vulners 10.0.0.1
+nmap --top-ports 10 10.0.0.1
 
 nmap --script=firewalk --traceroute 192.168.0.1
 

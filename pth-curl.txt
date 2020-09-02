@@ -1,0 +1,6 @@
+curl hfghjk.com
+curl -v -X HEAD websiat.com
+curl googel.com
+
+curl -L googel.com
+curl -o adam.txt googel.com

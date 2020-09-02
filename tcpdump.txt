@@ -15,6 +15,7 @@ msfconsole -p java/jsp-shell-reverse
 sslscan 10.0.0.1
 
 =================
+tcpdump -i wlan0 -v host 192.168.43.1
 tcpdump -i eth0 -v
 tcpdump -i wlan1mon -v
 tcpdump -i wlan1mon -v host 10.0.0.1   <<<==============
@@ -37,3 +38,5 @@ thc-pptp-bruter -v 192.168.88.254
         Upgrade-Insecure-Requests: 1
         Cache-Control: max-age=0
 
+==========================
+dnsenum -h
