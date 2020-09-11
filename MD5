@@ -1,0 +1,80 @@
+The full command we want to use is:
+
+#echo -n "Password1" | md5sum | tr -d " -" >> hashes
+
+
+----------------------------------------------------
+echo '2ac9cb7dc02b3c0083eb70898e549b63' >> hashes
+
+hashcat -a 3 hashes
+
+hashcat -a 3 hashes --show
+-----------------------------------
+
+# echo -n "Password1" | md5sum
+2ac9cb7dc02b3c0083eb70898e549b63  -
+
+After:
+
+# echo -n "Password1" | md5sum | tr -d " -"
+2ac9cb7dc02b3c0083eb70898e549b63
+
+For demonstration purposes, we'll create multiple MD5 hashes containing different strength passwords and output them to a file called hashes:
+
+echo -n "Password1" | md5sum | tr -d " -" >> hashes
+echo -n "HELLO" | md5sum | tr -d " -" >> hashes
+echo -n "MYSECRET" | md5sum | tr -d " -" >> hashes
+echo -n "Test1234" | md5sum | tr -d " -" >> hashes
+echo -n "P455w0rd" | md5sum | tr -d " -" >> hashes
+echo -n "GuessMe3" | md5sum | tr -d " -" >> hashes
+echo -n "S3CuReP455Word" | md5sum | tr -d " -" >> hashes
+echo -n "HighlyUnlik3lyToB3Cr4ck3d…" | md5sum | tr -d " -" >> hashes
+
+Once you have run these commands will look something like this:
+
+
+
+# cat hashes
+2ac9cb7dc02b3c0083eb70898e549b63
+eb61eead90e3b899c6bcbe27ac581660
+958152288f2d2303ae045cffc43a02cd
+2c9341ca4cf3d87b9e4eb905d6a3ec45
+75b71aa6842e450f12aca00fdf54c51d
+98bffa1e0b3872aa0813b0a62a2003ab
+b5af0b804ff7238bce48adef1e0c213f
+5a53193b4cca4ccdabf3ccb1fa514162
+
+If you already have a list of words then the following bash script can be used to automate the MD5 generation, reading each line in a file, then generating a file off the resulting hashes. Replace 'wordlist' with the file path of your word list.
+
+for i in $(cat wordlist); do echo -n "$i"| md5sum | tr -d " -" >> hashes; done
+
+
+
+
+Running hashcat to Crack MD5 Hashes
+
+hashcat –m 0 hashes /usr/share/wordlists/rockyou.txt
+
+
+
+
+
+ hashcat -m 0 hashes /usr/share/wordlists/rockyou.txt
+
+Initializing hashcat v2.00 with 2 threads and 32mb segment-size...
+
+Added hashes from file hashes: 8 (1 salts)
+
+
+2ac9cb7dc02b3c0083eb70898e549b63:Password1  
+
+eb61eead90e3b899c6bcbe27ac581660:HELLO      
+
+958152288f2d2303ae045cffc43a02cd:MYSECRET   
+
+75b71aa6842e450f12aca00fdf54c51d:P455w0rd   
+
+2c9341ca4cf3d87b9e4eb905d6a3ec45:Test1234   
+
+[s]tatus [p]ause [r]esume [b]ypass [q]uit =>
+s

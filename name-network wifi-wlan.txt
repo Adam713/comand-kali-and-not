@@ -1,0 +1,11 @@
+ CH 14 ][ Elapsed: 7 mins ][ 2020-09-03 21:09 ][ paused output                                                                                                       
+                                                                                                                                                                     
+ BSSID              PWR  Beacons    #Data, #/s  CH   MB   ENC CIPHER  AUTH ESSID                                                                                     
+                                                                                                                                                                     
+ EC:08:6B:A8:70:59  -24      735     1189    2   1   65   OPN              ( 168 )HWATEF-NET-01510322                                                                
+ B0:4E:26:B9:55:6C  -25      641        0    0   1  130   OPN              zid.net(1336)(772466366)                                                                  
+ C4:71:54:42:32:34  -71      145        0    0   9  130   WPA2 CCMP   PSK  Mila1                                                                                     
+ 64:70:02:46:F6:2E  -71       45        3    0   3  270   WPA2 CCMP   PSK  EBRALI2020                                                                                
+ E8:DE:27:AF:FE:F3  -72       23        0    0   6  270   WPA2 CCMP   PSK  TP-LINK                                                                                   
+ C4:6E:1F:58:81:B6  -72        8        0    0  11  405   WPA  CCMP   PSK  mhros77                                                                                   
+

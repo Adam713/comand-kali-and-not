@@ -12,7 +12,7 @@ www.zid.net.            3599    IN      TXT     "v=spf1 -all"
 User: aliasaad
 Pass: aliasaad
 
-User: aliasaad
+User: aliasaad         192.168.2.55
 Pass: aliasaad
 
 User: dircreate

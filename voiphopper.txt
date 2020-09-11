@@ -1,0 +1,4 @@
+voiphopper -i wlan0 -v 200 
+
+voiphopper -i wlan0 -a
+voiphopper -i wlan0 -t 1 -m 48:C7:96:FA:1A:62 

