@@ -5,3 +5,4 @@ netstat
 netstat -at
 netstat -atnp
 
+dmesg       

