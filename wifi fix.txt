@@ -1,0 +1,1 @@
+https://askubuntu.com/questions/62166/siocsifflags-operation-not-possible-due-to-rf-kill
