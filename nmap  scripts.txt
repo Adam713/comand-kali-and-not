@@ -1,4 +1,18 @@
+/usr/share/nmap/scripts
 nmap -sV --script=vulscan/vulscan.nse www.zidnet.net
+
+nmap --script vulscan,nmap-vulners -sV 192.168.88.1
+
+===============================
+cd /usr/share/nmap/scripts/
+wget https://raw.githubusercontent.com/vulnersCom/nmap-vulners/master/vulners.nse
+git clone https://github.com/scipag/vulscan
+
+nmap --script vulscan,nmap-vulners -sV 192.168.88.1
+
+nmap -sV --script=vulscan/vulscan.nse www.example.com
+nmap  -Pn -A -sV --script=vulscan/vulscan.nse www.example.com
+==========================
 nmap -p 21 192.168.0.1 --script ftp-anon
 
 nmap -sV --script vulners 10.0.0.1
@@ -20,6 +34,7 @@ hping3 -s 192.168.0.1 -c 100 -p ++1
 
 
 nmap -sS -F 192.168.1.1
+
 
 ====================================
 service apache2 start
