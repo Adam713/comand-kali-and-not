@@ -1,0 +1,6 @@
+
+nano ~/.bash_aliases
+
+alias hackwifi='besside-ng wlan1'
+============
+

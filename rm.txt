@@ -13,7 +13,7 @@ apt-get install vlc
 shutdown -h now
 10.3.108.3
 /etc/init.d/network-manager start
-
+mdk3 wlan1 d -b mac-list.txt -c 1
 ==============
 ubuntu
 

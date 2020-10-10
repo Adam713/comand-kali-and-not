@@ -1,0 +1,22 @@
+rm /var/cache/apt/archives/lock
+ rm /var/lib/apt/lists/lock
+ rm /var/lib/dpkg/lock
+
+sudo dpkg --configure -a
+wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
+
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade
+/root/.bash_aliases
+==================================
+aftar install kali 
+https://null-byte.wonderhowto.com/how-to/top-10-things-do-after-installing-kali-linux-0186450/
+1- adduser admin
+usermod -aG sudo admin
+----
+apt install tilix
+sudo apt update && sudo install kali-linux-rfid
+apt-get install maltego metasploit-framework burpsuite wireshark aircrack-ng hydra nmap beef-xss nikto
+git clone https://github.com/hak5darren/USB-Rubber-Ducky
+
+
+

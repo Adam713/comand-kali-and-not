@@ -111,7 +111,7 @@ macchanger -mac 64:5A:ED:31:D4:9A eth0                                        68
 -----------------------------------------
 mdk
 touch mac-list.txt
-mdk mon1 d -b mac-list.txt -c 1
+mdk3 mon1 d -b mac-list.txt -c 1
 mdk3 wlan1mon d -b mac-list.txt -c 5
 mdk3 wlan1 a
 mdk3 wlan1 d
