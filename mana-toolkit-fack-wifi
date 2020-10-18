@@ -1,0 +1,2 @@
+sudo nano /etc/mana-toolkit/hostapd-mana.conf
+sudo nano /usr/share/mana-toolkit/run-mana/start-net-simple.sh

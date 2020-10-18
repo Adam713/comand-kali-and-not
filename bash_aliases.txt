@@ -3,4 +3,11 @@ nano ~/.bash_aliases
 
 alias hackwifi='besside-ng wlan1'
 ============
+#this install 
+
+alias adam='besside-ng wlan1'
+
+#this uninstall 
+
+unalias adam 
 
