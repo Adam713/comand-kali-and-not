@@ -2,6 +2,7 @@
 nano ~/.bash_aliases
 
 alias hackwifi='besside-ng wlan1'
+alias mac='nano mac-list.txt'
 ============
 #this install 
 

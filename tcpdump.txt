@@ -15,6 +15,8 @@ msfconsole -p java/jsp-shell-reverse
 sslscan 10.0.0.1
 
 =================
+tcpdump -i wlan1mon -v host 192.168.1.30
+
 tcpdump -i wlan0 -v host 192.168.43.1
 tcpdump -i eth0 -v
 tcpdump -i wlan1mon -v

