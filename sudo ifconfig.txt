@@ -11,7 +11,7 @@
 7- ifconfig wlan0
 8- ifconfig wlan0 up
 9- iwconfig 
-
+systemctl start NetworkManager.service
 airodump-ng --bssid EC:08:6B:A8:70:59 --channel 1 --write HWATEF-NET wlan0
 
 wireshark open fail

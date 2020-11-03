@@ -1,0 +1,18 @@
+
+
+Hi,
+
+you must to definite   a defaut gateway
+
+ip link set ppp0 down
+ip link set ppp0 name pppoe0
+ip link set pppoe0 up
+
+route add default pppoe0
+
+
+ip link set wlxe84e064bc8b8 down
+ip link set wlxe84e064bc8b8 name wlan1
+ip link set wlan1 up
+
+route add default wlan1
