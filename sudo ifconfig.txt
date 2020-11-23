@@ -16,7 +16,10 @@ airodump-ng --bssid EC:08:6B:A8:70:59 --channel 1 --write HWATEF-NET wlan0
 
 wireshark open fail
 
+=====================
+wps tool
 
+wash -i wlan1  
 ============================
 airodump-ng -c 10 --bssid 50:0F:F5:D0:94:C8 wlan1    58:7F:66:7D:0F:50  192.168.1.103  255.255.255.0 - 192.168.1.255
 
