@@ -1,0 +1,1 @@
+dns-rebind -i wlan0 -d 10.0.0.1
