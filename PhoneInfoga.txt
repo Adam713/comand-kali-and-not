@@ -9,3 +9,5 @@ python3  -m pip install -r requirements.txt
 python3 phoneinfoga.py -n +18000827801
 python3 phoneinfoga.py -n +967713458500
 
+phoneinfoga scan -n "+967 (774) 748-439"
+967774748439

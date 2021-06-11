@@ -28,3 +28,4 @@ python findmyhash.py algorithm OPTIONS
 python findmyhash.py MD5 -h ccfab01b0f0addea1f61a97255525fdf
 findmyhash
 
+hydra -vv -l admin -P /usr/share/wordlists/metasploit/ 192.168.1.1 http

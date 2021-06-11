@@ -1,0 +1,128 @@
+ nmap 192.168.1.1/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-10 18:51 EDT
+Nmap scan report for 192.168.1.1
+Host is up (0.0047s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+1723/tcp open  pptp
+
+Nmap scan report for 192.168.1.115
+Host is up (0.0096s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+801/tcp  open  device
+2000/tcp open  cisco-sccp
+8291/tcp open  unknown
+
+Nmap scan report for 192.168.1.196
+Host is up (0.0062s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+801/tcp  open  device
+2000/tcp open  cisco-sccp
+8291/tcp open  unknown
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 57.74 seconds
+
+ nmap -A 192.168.1.115
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-10 18:59 EDT
+Nmap scan report for 192.168.1.115
+Host is up (0.0030s latency).
+Not shown: 996 closed ports                                                                                                                  
+PORT     STATE SERVICE        VERSION
+53/tcp   open  domain         (generic dns response: NOTIMP)
+801/tcp  open  http           MikroTik router config httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: RouterOS router configuration page
+2000/tcp open  bandwidth-test MikroTik bandwidth-test server
+8291/tcp open  winbox         MikroTik WinBox
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.91%I=7%D=6/10%Time=60C29965%P=i686-pc-linux-gnu%r(DNSVer
+SF:sionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0");
+Device type: general purpose
+Running: Linux 2.6.X|3.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+OS details: Linux 2.6.32 - 3.10
+Network Distance: 1 hop
+Service Info: OS: RouterOS; Device: router; CPE: cpe:/o:mikrotik:routeros
+
+TRACEROUTE (using port 554/tcp)
+HOP RTT     ADDRESS
+1   3.38 ms 192.168.1.115
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 154.10 seconds
+=========================
+ nmap -F 192.168.1.1/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-10 19:16 EDT                                                                              
+Nmap scan report for 192.168.1.1                                                                                                             
+Host is up (0.0021s latency).
+Not shown: 90 closed ports
+PORT      STATE    SERVICE
+7/tcp     filtered echo
+37/tcp    filtered time
+53/tcp    open     domain
+80/tcp    open     http
+106/tcp   filtered pop3pw
+443/tcp   open     https
+1723/tcp  open     pptp
+7070/tcp  filtered realserver
+9100/tcp  filtered jetdirect
+49156/tcp filtered unknown
+
+Nmap scan report for 192.168.1.115
+Host is up (0.0032s latency).
+Not shown: 98 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+2000/tcp open  cisco-sccp
+
+Nmap scan report for 192.168.1.196
+Host is up (0.0016s latency).
+Not shown: 98 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+2000/tcp open  cisco-sccp
+
+=============================
+nmap -F 192.168.1.1/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-10 19:16 EDT                                                                              
+Nmap scan report for 192.168.1.1                                                                                                             
+Host is up (0.0021s latency).
+Not shown: 90 closed ports
+PORT      STATE    SERVICE
+7/tcp     filtered echo
+37/tcp    filtered time
+53/tcp    open     domain
+80/tcp    open     http
+106/tcp   filtered pop3pw
+443/tcp   open     https
+1723/tcp  open     pptp
+7070/tcp  filtered realserver
+9100/tcp  filtered jetdirect
+49156/tcp filtered unknown
+
+Nmap scan report for 192.168.1.115
+Host is up (0.0032s latency).
+Not shown: 98 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+2000/tcp open  cisco-sccp
+
+Nmap scan report for 192.168.1.196
+Host is up (0.0016s latency).
+Not shown: 98 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+2000/tcp open  cisco-sccp
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 25.19 seconds
+root@kali:/home/kali# nmap -F 192.168.0.0/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-10 19:22 EDT
+Nmap done: 256 IP addresses (0 hosts up) scanned in 206.51 seconds
