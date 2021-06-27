@@ -1,0 +1,29 @@
+airbase-ng -e freewifib -c 6 wlan1mon 
+
+2===================================================
+dnsmasq.conf
+====================
+interface=wlan1mon
+#wlan1mon
+dhcp-range=10.0.0.10,10.0.0.250,12h
+dhcp-option=3, 10.0.0.1
+dhcp-option=6, 10.0.0.1
+server=8.8.8.8
+log-queries
+log-dhcp
+
+#isten-address=127.0.0.1
+=========
+ifconfig wlan1mon 10.0.0.1/24 up
+
+#dnsmasq -C dnsmasq.conf -d 
+
+#route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.1
+
+#echo 1 > /proc/sys/net/ipv4/ip_forward
+
+#iptables -P FORWARD ACCEPT
+
+#iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+#apache2ctl start

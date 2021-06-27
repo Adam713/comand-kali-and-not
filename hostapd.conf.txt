@@ -54,7 +54,7 @@ listen-address=127.0.0.1
 #Routing table and gateway:
 ============
 
-ifconfig wlan0mon up 192.168.1.1 netmask 255.255.255.0
+ifconfig wlan1mon up 192.168.1.1 netmask 255.255.255.0
 route add -net 192.168.1.0 netmask 255.255.255.0 gw 192.168.1.1
 
 dnsmasq -C dnsmasq.conf -d
@@ -65,7 +65,7 @@ dnsmasq -C dnsmasq.conf -d
 ==================
 
 iptables --table nat --append POSTROUTING --out-interface eth0 -j MASQUERADE
-iptables --append FORWARD --in-interface wlan0mon -j ACCEPT
+iptables --append FORWARD --in-interface wlan1mon -j ACCEPT
 
 echo 1 > /proc/sys/net/ipv4/ip_forward
 

