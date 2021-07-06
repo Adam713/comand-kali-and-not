@@ -83,3 +83,59 @@ Nmap done: 256 IP addresses (3 hosts up) scanned in 189.28 seconds
 https://router-network.com/ip/10-0-0-1
 
 hydra -l admin -P http://192.168.0.1
+======================================
+2021
+============================================
+nmap -A 192.168.11.1
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-04 19:56 EDT
+Nmap scan report for 192.168.11.1
+Host is up (0.0063s latency).
+Not shown: 930 closed ports, 59 filtered ports
+PORT      STATE SERVICE     VERSION
+21/tcp    open  ftp         vsftpd 2.0.8 or later
+|_ftp-anon: got code 500 "OOPS: no entry found!".
+23/tcp    open  telnet      BusyBox telnetd 1.14.0 or later (TP-LINK ADSL2+ router telnetd)
+53/tcp    open  domain      (generic dns response: NOTIMP)
+80/tcp    open  http        TP-LINK TD-W8968 http admin
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+139/tcp   open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open  netbios-ssn Samba smbd 3.0.14a (workgroup: WORKGROUP)
+1111/tcp  open  http        TP-LINK TD-W8968 http admin
+|_http-title: Site doesn't have a title (text/html; charset=utf-8).
+1900/tcp  open  upnp        Portable SDK for UPnP devices 1.6.19 (Linux 2.6.30; UPnP 1.0)
+4321/tcp  open  rwhois?
+7070/tcp  open  http        MikroTik router config httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: RouterOS router configuration page
+20005/tcp open  btx?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port53-TCP:V=7.91%I=7%D=7/4%Time=60E24ABA%P=i686-pc-linux-gnu%r(DNSVers
+SF:ionBindReqTCP,E,"\0\x0c\0\x06\x81\x84\0\0\0\0\0\0\0\0");
+Device type: WAP
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6.22
+OS details: Tomato 1.28 (Linux 2.6.22)
+Network Distance: 3 hops
+Service Info: Host: TP-LINK; OSs: Linux, RouterOS; Devices: WAP, router; CPE: cpe:/h:tp-link:td-w8968, cpe:/o:linux:linux_kernel:2.6.30, cpe:/o:mikrotik:routeros
+
+Host script results:
+|_clock-skew: mean: -1m22s, deviation: 0s, median: -1m23s
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.14a)
+|   NetBIOS computer name: 
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-07-04T23:57:50+00:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: share (dangerous)
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+|_smb2-time: Protocol negotiation failed (SMB2)
+
+TRACEROUTE (using port 1723/tcp)
+HOP RTT     ADDRESS
+1   2.38 ms 10.18.202.1
+2   4.91 ms 192.168.0.1
+3   7.02 ms 192.168.11.1
+

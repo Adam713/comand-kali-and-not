@@ -26,7 +26,9 @@ Max. Hosts    = 1   (2^0 - 0)
 Host Range    = { 91.195.240.126 - 91.195.240.126 }
 
 Pass: 
+192.168.110.1
 
+fe80::6e3b:6bff:fec4:e134
 
 
 
@@ -36,7 +38,7 @@ http://192.168.88.1:8291/userman
 tool user-manager customer pr
 admin@zid.net
 91.195.240.126
-
+http://192.168.88.1/userman
 Connected to 192.168.14.5:8291
 Exploit successful
 User: admin

@@ -1,0 +1,1 @@
+patator http_fuzz host=10.0.0.1 user=FILE0 password=FILE1 0='/home/kali/Downloads/Adam-bruteforce-py-master/key.txt' 1='/home/kali/Downloads/Adam-bruteforce-py-master/key.txt'

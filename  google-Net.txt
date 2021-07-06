@@ -232,3 +232,186 @@ PORT     STATE SERVICE
 MAC Address: E4:8D:8C:23:9B:12 (Routerboard.com)
 
 Nmap done: 256 IP addresses (6 hosts up) scanned in 20.89 seconds
+==================================
+http://10.1.0.1:801/
+208.91.197.26
+=============================================
+nmap 10.1.0.1/24
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 13:42 EDT
+Nmap scan report for go.net (10.1.0.1)
+Host is up (0.0047s latency).
+Not shown: 984 closed ports
+PORT      STATE    SERVICE
+7/tcp     filtered echo
+53/tcp    open     domain
+80/tcp    open     http
+443/tcp   open     https
+801/tcp   open     device
+1085/tcp  filtered webobjects
+1971/tcp  filtered netop-school
+2000/tcp  open     cisco-sccp
+2003/tcp  filtered finger
+2381/tcp  filtered compaq-https
+2725/tcp  filtered msolap-ptp2
+3052/tcp  filtered powerchute
+4006/tcp  filtered pxc-spvr
+4900/tcp  filtered hfcs
+8291/tcp  open     unknown
+16018/tcp filtered unknown
+MAC Address: E4:8D:8C:23:9B:12 (Routerboard.com)
+
+Nmap done: 256 IP addresses (1 host up) scanned in 210.68 seconds
+===========================================
+nmap 222.233.117.123
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 15:18 EDT
+Nmap scan report for 222.233.117.123
+Host is up (0.43s latency).
+Not shown: 985 closed ports
+PORT      STATE    SERVICE
+23/tcp    filtered telnet
+25/tcp    filtered smtp
+53/tcp    open     domain
+135/tcp   filtered msrpc
+139/tcp   filtered netbios-ssn
+445/tcp   filtered microsoft-ds
+999/tcp   filtered garcon
+1080/tcp  filtered socks
+1300/tcp  filtered h323hostcallsc
+3128/tcp  filtered squid-http
+4444/tcp  filtered krb524
+4662/tcp  filtered edonkey
+6346/tcp  filtered gnutella
+6699/tcp  filtered napster
+23502/tcp filtered unknown
+
+ nmap -Pn 209.250.11.251
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 15:21 EDT
+Nmap scan report for 209-250-11-251.static.convergentaz.net (209.250.11.251)
+Host is up (0.031s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+
+
+nmap 206.187.109.195
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 15:25 EDT
+Nmap scan report for 206.187.109.195
+Host is up (0.31s latency).
+Not shown: 989 closed ports
+PORT     STATE    SERVICE
+25/tcp   filtered smtp
+53/tcp   open     domain
+135/tcp  filtered msrpc
+445/tcp  filtered microsoft-ds
+999/tcp  filtered garcon
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
+
+============================
+nmap 192.185.121.199
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 15:33 EDT
+Nmap scan report for 192-185-121-199.unifiedlayer.com (192.185.121.199)
+Host is up (0.34s latency).
+Not shown: 975 closed ports
+PORT     STATE    SERVICE
+21/tcp   open     ftp
+22/tcp   open     ssh
+25/tcp   filtered smtp
+26/tcp   open     rsftp
+53/tcp   open     domain
+80/tcp   open     http
+110/tcp  open     pop3
+135/tcp  filtered msrpc
+143/tcp  open     imap
+443/tcp  open     https
+445/tcp  filtered microsoft-ds
+465/tcp  open     smtps
+587/tcp  open     submission
+993/tcp  open     imaps
+995/tcp  open     pop3s
+999/tcp  filtered garcon
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+2222/tcp open     EtherNetIP-1
+2525/tcp filtered ms-v-worlds
+3306/tcp open     mysql
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
+
+s
+
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT       ADDRESS
+1   2.28 ms   go.net (10.1.0.1)
+2   3.80 ms   192.168.1.1
+3   7.01 ms   192.168.2.1
+4   24.97 ms  82.114.163.111
+5   19.14 ms  82.114.160.6
+6   121.52 ms 82.114.164.18
+7   193.38 ms teng0-0-0-11.br01.mrs01.pccwbtn.net (63.222.61.1)
+8   216.60 ms hundredge0-3-0-0.br01.ldn04.pccwbtn.net (63.218.242.129)
+9   194.61 ms xe-3-0-0.mpr1.lhr15.uk.zip.zayo.com (64.125.12.61)
+===============================
+ nmap -Pn 192.168.2.1
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 15:52 EDT
+Nmap scan report for 192.168.2.1
+Host is up (0.0053s latency).
+Not shown: 996 filtered ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+23/tcp open  telnet
+53/tcp open  domain
+80/tcp open  http
+
+==============
+ nmap 187.185.112.1
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 16:07 EDT
+Nmap scan report for 187.185.112.1.cable.dyn.cableonline.com.mx (187.185.112.1)
+Host is up (0.36s latency).
+Not shown: 981 closed ports
+PORT     STATE    SERVICE
+21/tcp   open     ftp
+23/tcp   open     telnet
+25/tcp   filtered smtp
+53/tcp   open     domain
+135/tcp  filtered msrpc
+179/tcp  filtered bgp
+301/tcp  filtered unknown
+389/tcp  filtered ldap
+445/tcp  filtered microsoft-ds
+646/tcp  filtered ldp
+999/tcp  filtered garcon
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+2126/tcp open     pktcable-cops
+3918/tcp open     pktcablemmcops
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
+=========================================
+nmap -Pn 10.1.0.116
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-06 16:23 EDT
+Nmap scan report for 10.1.0.116
+Host is up (0.023s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+
+
+
+
+==================================
+78:4b:87:dc:01:6a

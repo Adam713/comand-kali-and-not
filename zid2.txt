@@ -111,3 +111,48 @@ https://github.com/knightmare2600/TR069research.git
 
 RouterOS v6.39.3 
 192.168.88.2-192.168.88.254
+--------------------------------------------
+map -sC -Pn -n 81.223.238.248
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-07-05 17:09 EDT
+Nmap scan report for 81.223.238.248
+Host is up (0.32s latency).
+Not shown: 984 closed ports
+PORT     STATE    SERVICE
+21/tcp   open     ftp
+22/tcp   open     ssh
+| ssh-hostkey: 
+|   2048 1c:58:36:ff:9d:ac:e7:18:32:b5:f0:e4:68:77:43:2b (RSA)
+|   256 1f:38:ef:47:8d:5b:79:9e:0e:12:db:cb:64:e0:1c:69 (ECDSA)
+|_  256 1f:c4:0a:24:87:17:1c:1d:01:6c:5f:30:37:d0:b4:08 (ED25519)
+25/tcp   filtered smtp
+53/tcp   open     domain
+80/tcp   open     http
+|_http-title: 404 Not Found
+135/tcp  filtered msrpc
+443/tcp  open     https
+|_http-title: 400 Bad Request
+| ssl-cert: Subject: commonName=www6.sprit.org
+| Subject Alternative Name: DNS:www6.sprit.org
+| Not valid before: 2021-07-02T00:20:54
+|_Not valid after:  2021-09-30T00:20:53
+| tls-alpn: 
+|_  http/1.1
+445/tcp  filtered microsoft-ds
+646/tcp  filtered ldp
+1080/tcp filtered socks
+1300/tcp filtered h323hostcallsc
+3306/tcp open     mysql
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.6.37-log
+|   Thread ID: 56841006
+|   Capabilities flags: 63487
+|   Some Capabilities: Support41Auth, ConnectWithDatabase, IgnoreSpaceBeforeParenthesis, FoundRows, Speaks41ProtocolOld, Speaks41ProtocolNew, InteractiveClient, IgnoreSigpipes, SupportsLoadDataLocal, SupportsTransactions, LongColumnFlag, ODBCClient, SupportsCompression, DontAllowDatabaseTableColumn, LongPassword, SupportsMultipleResults, SupportsMultipleStatments, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: q$Zyt\LIiSFC^1u{*]xa
+|_  Auth Plugin Name: mysql_native_password
+4444/tcp filtered krb524
+4662/tcp filtered edonkey
+6346/tcp filtered gnutella
+6699/tcp filtered napster
